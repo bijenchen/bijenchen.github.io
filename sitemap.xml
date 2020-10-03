@@ -3,18 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/murmur/</loc>
-    <lastmod>2020-10-02T18:05:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/</loc>
-    <lastmod>2020-10-02T18:05:44+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/murmur/murmur-setting-github-page-with-hugo/</loc>
-    <lastmod>2020-10-02T18:05:44+08:00</lastmod>
+    <loc>http://example.org/test-folder/firstmd/</loc>
   </url>
   
   <url>
@@ -22,7 +11,15 @@
   </url>
   
   <url>
+    <loc>http://example.org/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/test-folder/</loc>
   </url>
   
 </urlset>
