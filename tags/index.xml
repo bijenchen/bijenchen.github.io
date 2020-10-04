@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/</link>
+    <description>Recent content in Tags on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 Oct 2020 18:05:44 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git</title>
+      <link>https://bijenchen.github.io/tags/git/</link>
+      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git submodule</title>
+      <link>https://bijenchen.github.io/tags/git-submodule/</link>
+      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/git-submodule/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github page</title>
+      <link>https://bijenchen.github.io/tags/github-page/</link>
+      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/github-page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://bijenchen.github.io/tags/hugo/</link>
+      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>toml</title>
+      <link>https://bijenchen.github.io/tags/toml/</link>
+      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/toml/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
