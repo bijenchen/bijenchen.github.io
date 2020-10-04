@@ -15,7 +15,9 @@
       <guid>https://bijenchen.github.io/2020/10/setting-github-page-with-hugo-murmur/</guid>
       <description>發布日期：2020-10-02 最後更新日期：2020-10-04
   緣起 碰壁紀錄 節外生枝 後記 參考資料  緣起 做這件事的初衷其實是我想要把 github 當學習紀錄來用，順便讓自己熟悉 git 的使用。 雖然可以單純把每篇筆記做成 .md 檔案放到 github 裡，但是在檢視上似乎又不是非常方便，用手機看 github 時情感上覺得不太順眼，所以想要用 github.io 建立一個靜態網站當作部落格使用。
-再來，由於對調校前端畫面沒什麼興趣，想要找現成的畫面模板套不同的文章內容，讓維護部落格這件事情可以最單純化，所以搜尋「 github blog 」看看大家都是怎麼做。找到這篇和這篇，得到了看起來派得上用場的三個新名詞「 Jekyll 」、「 hexo 」和「 hugo 」，丟去 google 搜尋後大致知道這三個都是「靜態網站生成器」，主要的功能是提供模板與網頁生成引擎(參考的是這篇)，讓我們可以在不必研究網頁要如何長出來的情況下運作一個靜態網站。 (但是我的直覺告訴我：「網頁生成引擎如何運作」這個知識對後端工程師來說逃得了一時、逃不了一世。嗯&amp;hellip;&amp;hellip;希望未來的自己來打臉現在的我？ XD ) 因為我相信實際使用之後才能真正體會三者的差異以及找出自己的偏好，所以借助網路上的比拚文簡單判斷後，就決定從 hugo 開始實驗，反正之後發現不喜歡就換一個嘛～
+再來，由於對調校前端畫面沒什麼興趣，想要找現成的畫面模板套不同的文章內容，讓維護部落格這件事情可以最單純化，所以搜尋「 github blog 」看看大家都是怎麼做。找到這篇和這篇，得到了看起來派得上用場的三個新名詞「 Jekyll 」、「 hexo 」和「 hugo 」，丟去 google 搜尋後大致知道這三個都是「靜態網站生成器」，主要的功能是提供模板與網頁生成引擎(參考的是這篇)，讓我們可以在不必研究網頁要如何長出來的情況下運作一個靜態網站。
+(但是我的直覺告訴我：「網頁生成引擎如何運作」這個知識對後端工程師來說逃得了一時、逃不了一世。嗯&amp;hellip;&amp;hellip;希望未來的自己來打臉現在的我？ XD )
+因為我相信實際使用之後才能真正體會三者的差異以及找出自己的偏好，所以借助網路上的比拚文簡單判斷後，就決定從 hugo 開始實驗，反正之後發現不喜歡就換一個嘛～
 碰壁紀錄   遇到 GitHub &amp;ldquo;fatal: remote origin already exists&amp;rdquo;
  處理方式：重新指定遠端數據庫位置  git remote set-url origin git@github.com:[your_github_account]/[repository].git  your_github_account:遠端數據庫擁有者的帳號名稱 repository:遠端數據庫名稱 git remote set-url origin 後面接的就是在 github 上想要用 ssh 下載專案時顯示的專案位址      遇到 error:src refspec master does not match any</description>
     </item>
