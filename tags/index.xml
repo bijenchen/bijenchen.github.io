@@ -6,7 +6,43 @@
     <description>Recent content in Tags on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2020 15:24:32 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 00:13:02 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>internet</title>
+      <link>https://bijenchen.github.io/tags/internet/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:02 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>roadmap-developer</title>
+      <link>https://bijenchen.github.io/tags/roadmap-developer/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:02 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/roadmap-developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github page</title>
+      <link>https://bijenchen.github.io/tags/github-page/</link>
+      <pubDate>Sun, 18 Oct 2020 22:48:56 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/github-page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://bijenchen.github.io/tags/hugo/</link>
+      <pubDate>Sun, 18 Oct 2020 22:48:56 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>latavel 5</title>
       <link>https://bijenchen.github.io/tags/latavel-5/</link>
@@ -40,24 +76,6 @@
       <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
       
       <guid>https://bijenchen.github.io/tags/git-submodule/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github page</title>
-      <link>https://bijenchen.github.io/tags/github-page/</link>
-      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
-      
-      <guid>https://bijenchen.github.io/tags/github-page/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://bijenchen.github.io/tags/hugo/</link>
-      <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
-      
-      <guid>https://bijenchen.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hugo on 文科人的資訊筆記</title>
-    <link>https://bijenchen.github.io/tags/hugo/</link>
-    <description>Recent content in hugo on 文科人的資訊筆記</description>
+    <title>10月 on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/posts/2020/10/</link>
+    <description>Recent content in 10月 on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 22:48:56 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://bijenchen.github.io/posts/2020/10/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Change Custom Style</title>
       <link>https://bijenchen.github.io/posts/2020/10/change-custom-style/</link>
@@ -15,6 +14,17 @@
       <guid>https://bijenchen.github.io/posts/2020/10/change-custom-style/</guid>
       <description>目標 想要在每篇文章顯示最後更新時間，最好能自動吃存檔時間。
 過程紀錄  閱讀 Learn Theme for Hugo 教學文件的 Style customization 章節，知道了套用主題時，應該在跟 content 同層級的 layouts 放樣板html，如果想要加入自訂 header ，應該在 layouts/partials/ 增加一個名為 custom-header.html 的檔案， Learn Theme 的 header.html 會去吃 custom-header.html 增加到主題的 header 中。 閱讀 hugo 官方文件的 front-matte 章節，發現有 last modified 的參數可用 lastmod 。  在 hugo 官網搜尋「lastmod」關鍵字，找到 .Lastmod function 的說明，發現 lastmod 可以吃 git 資訊，但是要設定 config 。 config 詳細的設定也附上了連結「front matter configuration for dates」。   原本不知道如何寫 custom-header ，但是因為 google 搜尋 hogo LastMod 參數時，找到這篇，看起來應該可以直接用，所以把 lastmod 的 html code 丟進去我自己的 custom-header.</description>
+    </item>
+    
+    <item>
+      <title>初探&amp;建環境</title>
+      <link>https://bijenchen.github.io/posts/2020/10/laravel5-book-kj-01/</link>
+      <pubDate>Sun, 04 Oct 2020 15:24:32 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/10/laravel5-book-kj-01/</guid>
+      <description>閱讀書籍： Laravel 5 for beginner 新手道場 作者： 洪可郡（KeJyun）  博客來連結 gitbook  Laravel 初探   開發網站使用框架的理由
+ 當我們遇到以下情境，使用框架會帶來不少好處：  整個網站的功能複雜，需要一個系統化、層級明確、分工清楚的程式架構，以便規劃與維護  note: 就像小團隊可以不用明確組織架構也能順利運作，但到一定規模以後每個部門就會有明確層級跟分工，一但出現新任務才會知道要找誰來做。也像是東西要分門別類收好，要用的時候才容易找。   有時程壓力，需要迅速完工  note: 大多數專案都會用到的功能，框架通常會很貼心地幫我們做好，讓我們可以直接使用，省時省工。而在自己的程式架構中，把功能切得越獨立，也越容易單獨提取、重複使用，一樣省時省工。   需要跟他人合作打造專案  note: 彼此都懂使用的框架在寫什麼、在幹嘛，可以省去很多解釋與溝通的時間。就像大家都知道什麼作用的工具放在哪裡，不用說明就能自行找到並且拿來用。     note: 框架有分前端和後端，但「需要框架的情境」、「框架帶來的好處」不分前後端都適用    選框架的方法
+ 維護性  如果打算開發商業產品，至少要選「有 LTS(Long-term support) 版本可用」的框架  note: 才不會變成沒人維護的孤兒專案，找到 bug 至少還有人會去改。   框架更新是成本，如果是商業產品，請務必謹慎評估後再更新。如果有好好寫單元測試(Unit test)的話，至少可以在更新時確保更新前後程式都能滿足相同的商業邏輯，不會出錯。   擴充性  該框架是否容易引入套件、套件選擇多  note: 專案需求千奇百怪，但框架通常是以大家的最大公約數在設計。如果框架本身對套件的包容性高，就能接納其他高手提供的套件，使用該框架的人也會越來越多。當使用的人變多，框架的 bug 就越容易被發現與修復，增加框架的穩定度。使用上會更加安心～   加碼說明： php 的套件管理工具「 composer 」  note: 套件管理工具會聰明的判斷使用哪個版本號的套件，避免更新之後新舊版本互斥、程式掛掉。     因為 Laravel 滿足上述所有條件，使用者多、安裝方便、擴充性也很夠，觀察使用者社群趨勢也還維持成長狀態，所以選擇 Laravel 作為開發專案的框架。    設定 Laravel 開發環境   Laravel 很貼心地幫大家降低環境阻礙，提供 Homestead 虛擬環境給開發者。所以第一步就是建立 Homestead 虛擬環境，原則上依照 laravel 官網 的 documentation 步驟走就行了。(我選的是 laravel 7.</description>
     </item>
     
     <item>
