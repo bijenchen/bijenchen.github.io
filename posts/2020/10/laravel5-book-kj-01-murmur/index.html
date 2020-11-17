@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>關於：建環境 :: 文科人的資訊筆記</title>
+
+    
+    <link href="/css/nucleus.css?1605575387" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1605575387" rel="stylesheet">
+    <link href="/css/hybrid.css?1605575387" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1605575387" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1605575387" rel="stylesheet">
+    <link href="/css/auto-complete.css?1605575387" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1605575387" rel="stylesheet">
+    <link href="/css/theme.css?1605575387" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1605575387" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1605575387"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  <p style="text-align: right;">發布日期：Oct 4, 2020</p>    
+  
+      <p style="text-align: right;">文章於 Oct 18, 2020 更新</p>
+  
+
+  </head>
+  <body class="" data-url="/posts/2020/10/laravel5-book-kj-01-murmur/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://bijenchen.github.io/">
+  <svg id="grav-logo" style="width:100%; height:100%;" viewBox="0 0 504 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="palette" class="svg-inline--fa fa-palette fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor" d="M204.3 5C104.9 24.4 24.8 104.3 5.2 203.4c-37 187 131.7 326.4 258.8 306.7 41.2-6.4 61.4-54.6 42.5-91.7-23.1-45.4 9.9-98.4 60.9-98.4h79.7c35.8 0 64.8-29.6 64.9-65.3C511.5 97.1 368.1-26.9 204.3 5zM96 320c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm32-128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128-64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path>
+    </svg>
+  </svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1605575387"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1605575387"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/bijenchen.github.io\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1605575387"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/" title="Posts" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/posts/">
+          Posts
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/roadmap-developer/" title="網頁開發者技能樹" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/posts/roadmap-developer/">
+          網頁開發者技能樹
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/roadmap-developer/general/" title="共通知識" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/posts/roadmap-developer/general/">
+          共通知識
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/roadmap-developer/backend/" title="後端工程師" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/posts/roadmap-developer/backend/">
+          後端工程師
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/roadmap-developer/backend/internet/" title="關於網路" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/posts/roadmap-developer/backend/internet/">
+          關於網路<i class="fas fa-globe" style="margin: 3px;"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/roadmap-developer/backend/internet/what-is-hosting/" title="What Is Hosting" class="dd-item ">
+        <a href="/posts/roadmap-developer/backend/internet/what-is-hosting/">
+        <i class="fas fa-globe" style="margin: 3px;"></i>Hosting
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/roadmap-developer/backend/internet/what-is-domain-name/" title="What Is Domain Name" class="dd-item ">
+        <a href="/posts/roadmap-developer/backend/internet/what-is-domain-name/">
+        <i class="fas fa-globe" style="margin: 3px;"></i>Domain
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/roadmap-developer/backend/internet/dns-and-how-it-works/" title="Dns and How It Works" class="dd-item ">
+        <a href="/posts/roadmap-developer/backend/internet/dns-and-how-it-works/">
+        <i class="fas fa-globe" style="margin: 3px;"></i>DNS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/roadmap-developer/backend/internet/browsers-and-how-they-work/" title="Browsers and How They Work" class="dd-item ">
+        <a href="/posts/roadmap-developer/backend/internet/browsers-and-how-they-work/">
+        <i class="fas fa-globe" style="margin: 3px;"></i>瀏覽器
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/roadmap-developer/backend/internet/what-is-http/" title="What Is Http" class="dd-item ">
+        <a href="/posts/roadmap-developer/backend/internet/what-is-http/">
+        <i class="fas fa-globe" style="margin: 3px;"></i>Http
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/roadmap-developer/backend/internet/how-does-the-internet-work/" title="How Does the Internet Work" class="dd-item ">
+        <a href="/posts/roadmap-developer/backend/internet/how-does-the-internet-work/">
+        <i class="fas fa-globe" style="margin: 3px;"></i>網路運作原理
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/2020/" title="2020" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/posts/2020/">
+          2020
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/2020/10/" title="10月" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/posts/2020/10/">
+          10月
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/2020/10/change-custom-style/" title="Change Custom Style" class="dd-item ">
+        <a href="/posts/2020/10/change-custom-style/">
+        <b>[架個部落格] </b>設定 custom header
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/2020/10/laravel5-book-kj-01/" title="初探&amp;建環境" class="dd-item ">
+        <a href="/posts/2020/10/laravel5-book-kj-01/">
+        <b>[讀書筆記]Laravel 5 for beginner 新手道場 </b>初探&amp;建環境
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+             
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/2020/10/setting-github-page-with-hugo/" title="用 hugo 搭配 github page 打造一個自己的部落格" class="dd-item ">
+        <a href="/posts/2020/10/setting-github-page-with-hugo/">
+        <b>[架個部落格] </b>hugo blog
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/posts/2020/11/sleep/" title="Sleep" class="dd-item ">
+        <a href="/posts/2020/11/sleep/">
+        程式設計裡的 sleep
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://bijenchen.github.io/tags"><i class='fas fa-tags'></i> Tags</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>文科人的資訊筆記</a> > <a href='/posts/'>Posts</a> > <a href='/posts/2020/'>2020</a> > <a href='/posts/2020/10/'>10月</a> > 關於：建環境
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#碰壁紀錄">碰壁紀錄</a></li>
+    <li><a href="#先存著之後細讀首次啟動-homestead-跑的相關設定">先存著之後細讀，首次啟動 homestead 跑的相關設定</a></li>
+    <li><a href="#還沒解的疑問">還沒解的疑問</a></li>
+    <li><a href="#節外生枝">節外生枝</a></li>
+    <li><a href="#後記">後記</a></li>
+    <li><a href="#參考資料">參考資料</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/latavel-5">latavel 5</a>
+
+  <a class="tag-link" href="/tags/reflection">reflection</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              關於：建環境
+            </h1>
+          
+
+        
+
+
+<blockquote>
+<p>發布日期：2020-10-??
+最後更新日期：2020-10-10</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h2 id="碰壁紀錄">碰壁紀錄</h2>
+<ul>
+<li>
+<p>由於 Homestead 要在 vitural box 上運作，書上特別強調必須依照 Homestead 的版本要求選擇對應的 vitural box 。但是我要在哪裡知道目前的 Homestead 需要哪個版本的 Virtual Box ?</p>
+<ul>
+<li>
+<blockquote>
+<p><em>google 「Laravel Homestead」找到了 Laravel Homestead 的<a href="https://laravel.tw/docs/5.1/homestead">說明文件</a>，文件上說要用 5.x 版本的 vitural box ，所以雖然 vitural box 目前已經推到 6.x 的版本，也不要選最新版避免節外生枝。</em></p>
+</blockquote>
+</li>
+<li>上面的傻孩子你實在太天真了，看 <a href="https://laravel.com/">laravel 官網</a> 即可，在現在這個時間， vitural box 6.x 才是正解喔！</li>
+</ul>
+</li>
+<li>
+<p><em>note: vargant 提供的安裝選項有新增為四項，一樣選用 virtualbox</em></p>
+<ul>
+<li>
+<ol>
+<li>hyperv</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>parallels</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>virtualbox</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>vmware_desktop</li>
+</ol>
+</li>
+</ul>
+<p>這邊等了快半小時，看來我的網速不夠飛速 XD</p>
+</li>
+<li>
+<p>Homestead 設定檔進展很多，現在到 v11.1.2 了！@@</p>
+<ul>
+<li>差異
+<ul>
+<li>sites 的網域設定裡的預設值「 .local 」變成「 .test 」了，但這邊反正可以取自己喜歡像是 [yourname].laravel-site 之類的，所以無傷大雅。</li>
+<li>新版本的 Homestead.yaml 多了一些可以設定的項目，但預設都是關起來的
+<pre><code>features:
+     - mariadb: false
+     - ohmyzsh: false
+     - webdriver: false
+
+ #services:
+ #    - enabled:
+ #        - &quot;postgresql@12-main&quot;
+ #    - disabled:
+ #        - &quot;postgresql@11-main&quot;
+
+ # ports:
+ #     - send: 50000
+ #       to: 5000
+ #     - send: 7777
+ #       to: 777
+ #       protocol: udp
+</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><code>vagrant ssh</code> 進入 Homestead 虛擬主機之後 <code>ls</code> 看一下， Homestead.yaml 檔共享目錄裡紀錄的虛擬主機目錄真的有存在。所以應該是執行 <code>bash init.sh</code> 的時候，按照當時下載的 Homestead 檔案建立 Homestead 虛擬環境(這邊是初始化， Homestead.yaml 異動後要更新環境的話，需使用 <code>vagrant provision</code>)。</p>
+</li>
+<li>
+<p>卡關惹Q___Q 先休息冷靜一下(2020-10-07 過午夜了Q_____Q)</p>
+<ul>
+<li>在 code/ 執行 <code>composer create-project --prefer-dist laravel/laravel shop_laravel</code> 時，遇到 [InvalidArgumentException]
+<pre><code>vagrant@homestead:~/code$ composer create-project --prefer-dist laravel/laravel shop_laravel
+</code></pre><pre><code>[InvalidArgumentException]
+    Composer could not find a composer.json file in /home/vagrant/code/shop_laravel
+    To initialize a project, please create a composer.json file as described in
+    the https://getcomposer.org/ &quot;Getting Started&quot; section
+</code></pre></li>
+<li>把 shop_laravel/ 放在 /home/vagrant/ 層級下 ==&gt; 沒有用Q__Q
+<ul>
+<li>也就是前一步往外一層執行 <code>composer create-project xxxxxxx</code>
+<ul>
+<li>得到「 Application key set successfully. 」</li>
+</ul>
+</li>
+<li>public/ 路徑長這樣： /home/vagrant/shop_laravel/public</li>
+<li>/etc/hosts
+<ul>
+<li><code>192.168.10.10   shop-laravel.local</code></li>
+</ul>
+</li>
+<li><em>Homestead.yaml</em> sites:
+<ul>
+<li>map: shop-laravel.local</li>
+<li>to: /home/vagrant/shop_laravel/public</li>
+</ul>
+</li>
+<li>此時進入 <a href="http://shop-laravel.local/">http://shop-laravel.local/</a> 會顯示「 No input file specified. 」</li>
+</ul>
+</li>
+<li>這個卡關原因完全就是「安裝環境版本選錯」而已，選對完全不會走這些冤枉路&hellip;&hellip;替自己掬一把傷心淚。</li>
+</ul>
+</li>
+</ul>
+<h2 id="先存著之後細讀首次啟動-homestead-跑的相關設定">先存著之後細讀，首次啟動 homestead 跑的相關設定</h2>
+<pre><code>Bringing machine 'homestead' up with 'virtualbox' provider...
+==&gt; homestead: Box 'laravel/homestead' could not be found. Attempting to find and install...
+    homestead: Box Provider: virtualbox
+    homestead: Box Version: ~&gt; 10.0.0
+==&gt; homestead: Loading metadata for box 'laravel/homestead'
+    homestead: URL: https://vagrantcloud.com/laravel/homestead
+==&gt; homestead: Adding box 'laravel/homestead' (v10.0.0) for provider: virtualbox
+    homestead: Downloading: https://vagrantcloud.com/laravel/boxes/homestead/versions/10.0.0/providers/virtualbox.box
+Download redirected to host: vagrantcloud-files-production.s3.amazonaws.com
+    homestead: Calculating and comparing box checksum...
+==&gt; homestead: Successfully added box 'laravel/homestead' (v10.0.0) for 'virtualbox'!
+==&gt; homestead: Importing base box 'laravel/homestead'...
+==&gt; homestead: Matching MAC address for NAT networking...
+==&gt; homestead: Checking if box 'laravel/homestead' version '10.0.0' is up to date...
+==&gt; homestead: Setting the name of the VM: homestead
+Vagrant is currently configured to create VirtualBox synced folders with
+the `SharedFoldersEnableSymlinksCreate` option enabled. If the Vagrant
+guest is not trusted, you may want to disable this option. For more
+information on this option, please refer to the VirtualBox manual:
+
+  https://www.virtualbox.org/manual/ch04.html#sharedfolders
+
+This option can be disabled globally with an environment variable:
+
+  VAGRANT_DISABLE_VBOXSYMLINKCREATE=1
+
+or on a per folder basis within the Vagrantfile:
+
+  config.vm.synced_folder '/host/path', '/guest/path', SharedFoldersEnableSymlinksCreate: false
+==&gt; homestead: Clearing any previously set network interfaces...
+==&gt; homestead: Preparing network interfaces based on configuration...
+    homestead: Adapter 1: nat
+    homestead: Adapter 2: hostonly
+==&gt; homestead: Forwarding ports...
+    homestead: 80 (guest) =&gt; 8000 (host) (adapter 1)
+    homestead: 443 (guest) =&gt; 44300 (host) (adapter 1)
+    homestead: 3306 (guest) =&gt; 33060 (host) (adapter 1)
+    homestead: 4040 (guest) =&gt; 4040 (host) (adapter 1)
+    homestead: 5432 (guest) =&gt; 54320 (host) (adapter 1)
+    homestead: 8025 (guest) =&gt; 8025 (host) (adapter 1)
+    homestead: 9600 (guest) =&gt; 9600 (host) (adapter 1)
+    homestead: 27017 (guest) =&gt; 27017 (host) (adapter 1)
+    homestead: 22 (guest) =&gt; 2222 (host) (adapter 1)
+==&gt; homestead: Running 'pre-boot' VM customizations...
+==&gt; homestead: Booting VM...
+==&gt; homestead: Waiting for machine to boot. This may take a few minutes...
+    homestead: SSH address: 127.0.0.1:2222
+    homestead: SSH username: vagrant
+    homestead: SSH auth method: private key
+    homestead: Warning: Connection reset. Retrying...
+    homestead: Warning: Remote connection disconnect. Retrying...
+    homestead:
+    homestead: Vagrant insecure key detected. Vagrant will automatically replace
+    homestead: this with a newly generated keypair for better security.
+    homestead:
+    homestead: Inserting generated public key within guest...
+    homestead: Removing insecure key from the guest if it's present...
+    homestead: Key inserted! Disconnecting and reconnecting using new SSH key...
+==&gt; homestead: Machine booted and ready!
+==&gt; homestead: Checking for guest additions in VM...
+    homestead: The guest additions on this VM do not match the installed version of
+    homestead: VirtualBox! In most cases this is fine, but in rare cases it can
+    homestead: prevent things such as shared folders from working properly. If you see
+    homestead: shared folder errors, please make sure the guest additions within the
+    homestead: virtual machine match the version of VirtualBox you have installed on
+    homestead: your host and reload your VM.
+    homestead:
+    homestead: Guest Additions Version: 6.1.8
+    homestead: VirtualBox Version: 5.2
+==&gt; homestead: Setting hostname...
+==&gt; homestead: Configuring and enabling network interfaces...
+==&gt; homestead: Mounting shared folders...
+    homestead: /vagrant =&gt; /Users/bijen/Code/Homestead
+    homestead: /home/vagrant/code =&gt; /Users/bijen/Code
+    homestead: /home/vagrant/laravel_project =&gt; /Users/bijen/laravel_project
+==&gt; homestead: Detected mount owner ID within mount options. (uid: 1000 guestpath: /home/vagrant/code)
+==&gt; homestead: Detected mount group ID within mount options. (gid: 1000 guestpath: /home/vagrant/code)
+==&gt; homestead: Detected mount owner ID within mount options. (uid: 1000 guestpath: /home/vagrant/laravel_project)
+==&gt; homestead: Detected mount group ID within mount options. (gid: 1000 guestpath: /home/vagrant/laravel_project)
+==&gt; homestead: Running provisioner: file...
+    homestead: /Users/bijen/Code/Homestead/aliases =&gt; /tmp/bash_aliases
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+    homestead:
+    homestead: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDJt0x32prG1C6p/hrKDhLLm+UVl77aoZEuSfALANQWCsptM3kt51no+JIu8J8C9WoTeurwATZLP1tXeAPH4YIUn/xPEOi+iXqzIrJNNK6qk1vN1Ih0WxA2rDO2aPwjL0s8gIRp9VDKhIaL+nzCwWQTqAzvnNGU04qnlKXPiAT8Wpn5b0XnA07cMsswUFNMsT6dbAew/lj7kA+BWyC3eQhI+WeTgWsPWnXsVQu97O/al8DJL+TGhS3ZWRFGsUfoiKY2SM48GULWGLzdlrhvJCDs3aIEIhGC1EcDMxy2KFUCxjhh3/WqtOtlFbwv3deLcgw7R3TqPZO4ImRfaNmllKqZ i-am-bijen
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+    homestead: Ignoring feature: mariadb because it is set to false
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+    homestead: Ignoring feature: ohmyzsh because it is set to false
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+    homestead: Ignoring feature: webdriver because it is set to false
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: /var/folders/zg/z6qg4xpx70d_0091ntyg0plm0000gp/T/vagrant-shell20201004-43309-17ev9xw.sh
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: /var/folders/zg/z6qg4xpx70d_0091ntyg0plm0000gp/T/vagrant-shell20201004-43309-abia02.sh
+==&gt; homestead: Running provisioner: Creating Certificate: homestead.test (shell)...
+    homestead: Running: script: Creating Certificate: homestead.test
+    homestead: Updating certificates in /etc/ssl/certs...
+    homestead: rehash: warning: skipping duplicate certificate in ca.homestead.homestead.pem
+    homestead: 1 added, 0 removed; done.
+    homestead: Running hooks in /etc/ca-certificates/update.d...
+    homestead: done.
+==&gt; homestead: Running provisioner: Creating Site: homestead.test (shell)...
+    homestead: Running: script: Creating Site: homestead.test
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: /var/folders/zg/z6qg4xpx70d_0091ntyg0plm0000gp/T/vagrant-shell20201004-43309-si82a2.sh
+==&gt; homestead: Running provisioner: Checking for old Schedule (shell)...
+    homestead: Running: script: Checking for old Schedule
+==&gt; homestead: Running provisioner: Creating Certificate: bijen.laravel-site (shell)...
+    homestead: Running: script: Creating Certificate: bijen.laravel-site
+==&gt; homestead: Running provisioner: Creating Site: bijen.laravel-site (shell)...
+    homestead: Running: script: Creating Site: bijen.laravel-site
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: inline script
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: /var/folders/zg/z6qg4xpx70d_0091ntyg0plm0000gp/T/vagrant-shell20201004-43309-1e955wi.sh
+==&gt; homestead: Running provisioner: Checking for old Schedule (shell)...
+    homestead: Running: script: Checking for old Schedule
+==&gt; homestead: Running provisioner: Clear Variables (shell)...
+    homestead: Running: script: Clear Variables
+==&gt; homestead: Running provisioner: Restarting Cron (shell)...
+    homestead: Running: script: Restarting Cron
+==&gt; homestead: Running provisioner: Restart Webserver (shell)...
+    homestead: Running: script: Restart Webserver
+==&gt; homestead: Running provisioner: Creating MySQL Database: homestead (shell)...
+    homestead: Running: script: Creating MySQL Database: homestead
+    homestead: We didn't find a PID for mariadb, skipping $DB creation
+==&gt; homestead: Running provisioner: Creating Postgres Database: homestead (shell)...
+    homestead: Running: script: Creating Postgres Database: homestead
+==&gt; homestead: Running provisioner: Update Composer (shell)...
+    homestead: Running: script: Update Composer
+    homestead: Updating to version 1.10.13 (stable channel).
+    homestead:
+    homestead: Use composer self-update --rollback to return to version 1.10.9
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: /var/folders/zg/z6qg4xpx70d_0091ntyg0plm0000gp/T/vagrant-shell20201004-43309-px4t6p.sh
+==&gt; homestead: Running provisioner: Update motd (shell)...
+    homestead: Running: script: Update motd
+==&gt; homestead: Running provisioner: shell...
+    homestead: Running: /var/folders/zg/z6qg4xpx70d_0091ntyg0plm0000gp/T/vagrant-shell20201004-43309-vbzsh2.sh
+</code></pre><p>vagrant@homestead:~/Code$ laravel new shop_laravel</p>
+<p>bijen.laravel-site</p>
+<h2 id="還沒解的疑問">還沒解的疑問</h2>
+<ul>
+<li>使用 Homestead 究竟省掉多少事？實際上它處理掉哪些事情？
+<ul>
+<li>其一：不用自己設定 nginx</li>
+</ul>
+</li>
+<li>vargant 在做什麼？</li>
+<li>為何要選家目錄放置 Homestead 和專案？用其他層會造成什麼問題嗎？</li>
+<li>為何要開兩個資料夾？ Code &amp; laravel_project ？看起來 laravel_project 資料夾會放使用 laravel 框架做出來的網站的程式碼，那 Code 呢？</li>
+<li>Homestead.yaml 裡的設定，為何大家的 ip 會一樣？是因為 192.168.10.10 代表 virtualbox 的 ip 嗎？
+<ul>
+<li>好像是 Homestead 的預設主機 ip ，<a href="http://kejyun.github.io/Laravel-5-Learning-Notes-Books/environment/Environment-Homestead-README.html">這裡</a>說的。可是 KJ gitbook 上說「Homestead 預設的主機 ip 都為 192.168.10.11」，所以是依照不同版本的 Homestead.yaml 喜歡指定哪個 ip 變動，其實 ip 只要不跟人撞，就可以自己寫開心？</li>
+<li>ip 分成四段的數字個字代表什麼意義？每一段都有專門對應的意義嗎？裡面有什麼約定俗成的默契嗎？</li>
+</ul>
+</li>
+<li>為什麼<a href="http://kejyun.github.io/Laravel-5-Learning-Notes-Books/environment/Environment-Homestead-README.html">這裡</a>在執行完 <code>vagrant up</code> 後就可以看到 <a href="http://kejyun.app">http://kejyun.app</a> 的內容？我在執行完之後先看設定好的 domain ，只看到 <em>No input file specified.</em>
+<ul>
+<li>難道說有途徑可以「在 <code>vagrant up</code> 之前就裝好 laravel 」?所以原來 laravel 不是裝在 homestead 裡面?!!但是看書裡的描述應該是裝在 homestead 才對？我誤會了哪一邊？@@</li>
+</ul>
+</li>
+</ul>
+<h2 id="節外生枝">節外生枝</h2>
+<h2 id="後記">後記</h2>
+<h2 id="參考資料">參考資料</h2>
+<ul>
+<li><a href="https://laravel.tw/docs/5.1/homestead">Laravel Homestead</a></li>
+<li><a href="https://packagist.org/packages/laravel/homestead">Homestead 發布版本</a></li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/posts/2020/" title="2020"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/posts/2020/10/change-custom-style/" title="Change Custom Style" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1605575387"></script>
+    <script src="/js/perfect-scrollbar.min.js?1605575387"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1605575387"></script>
+    <script src="/js/jquery.sticky.js?1605575387"></script>
+    <script src="/js/featherlight.min.js?1605575387"></script>
+    <script src="/js/highlight.pack.js?1605575387"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1605575387"></script>
+    <script src="/js/learn.js?1605575387"></script>
+    <script src="/js/hugo-learn.js?1605575387"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1605575387"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
