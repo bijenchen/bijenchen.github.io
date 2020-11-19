@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sleep on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/sleep/</link>
+    <description>Recent content in sleep on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Nov 2020 23:43:12 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/sleep/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sleep</title>
+      <link>https://bijenchen.github.io/posts/2020/11/sleep/</link>
+      <pubDate>Wed, 11 Nov 2020 23:43:12 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/11/sleep/</guid>
+      <description>程式設計時有時候會需要用到「 sleep 」這個概念，
+常見的情境是：需要頻繁訪問嬌貴對象的時候，在訪問中間穿插幾次休息，以免對象被訪問到掛掉。
+例如： 無可避免需要跟資料庫用迴圈大量交易資料時、爬蟲去跟網站伺服器要資料時&amp;hellip;&amp;hellip;
+這時候中間穿插的休息就很重要，適當的休息能降低訪問對象的負擔，
+有時候因為穿插不固定的暫停時間，還能把程式運作偽裝成人類行為。
+但是 sleep 濫用會造成程式執行過久、長時間佔用資源、增加執行失敗的風險等等狀況，
+所以設計時需要注意一些事情：
+ 與資料庫連線時， sleep 的時間約 0.1~0.3 秒即可，視現實狀況再調整。  如果使用了 transaction ，盡量不要讓 transaction 開著太久，造成其他人無法對資料庫內容進行操作， 資料表被鎖住(lock)對自動執行的程式來說很困擾。 sleep 時間設定為浮動的原因，是為了試圖避免總是踩到特定秒數才有的雷，降低執行失敗的機率。   sleep 太久會讓程式執行的時間無謂地延長，增加中間出現變數的風險。  暫時不想深究的疑問：
+ 資料庫、伺服器等等「嬌貴」的原因是什麼？會有讓他們不再嬌貴的可行辦法嗎？  參考資料 以上概念還沒有找到相關資料來佐證，資料待查。
+   </description>
+    </item>
+    
+  </channel>
+</rss>

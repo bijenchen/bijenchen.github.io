@@ -6,11 +6,74 @@
     <description>Recent content in Tags on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:13:02 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Nov 2020 11:45:41 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>command in linux</title>
+      <link>https://bijenchen.github.io/tags/command-in-linux/</link>
+      <pubDate>Tue, 17 Nov 2020 11:45:41 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/command-in-linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>experience</title>
+      <link>https://bijenchen.github.io/tags/experience/</link>
+      <pubDate>Tue, 17 Nov 2020 11:45:41 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>su</title>
+      <link>https://bijenchen.github.io/tags/su/</link>
+      <pubDate>Tue, 17 Nov 2020 11:45:41 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/su/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design</title>
+      <link>https://bijenchen.github.io/tags/design/</link>
+      <pubDate>Wed, 11 Nov 2020 23:43:12 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sleep</title>
+      <link>https://bijenchen.github.io/tags/sleep/</link>
+      <pubDate>Wed, 11 Nov 2020 23:43:12 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/sleep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DNS</title>
+      <link>https://bijenchen.github.io/tags/dns/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Domamin Name System</title>
+      <link>https://bijenchen.github.io/tags/domamin-name-system/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/domamin-name-system/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>internet</title>
       <link>https://bijenchen.github.io/tags/internet/</link>
-      <pubDate>Mon, 19 Oct 2020 00:13:02 +0800</pubDate>
+      <pubDate>Mon, 19 Oct 2020 00:13:14 +0800</pubDate>
       
       <guid>https://bijenchen.github.io/tags/internet/</guid>
       <description></description>
@@ -19,9 +82,18 @@
     <item>
       <title>roadmap-developer</title>
       <link>https://bijenchen.github.io/tags/roadmap-developer/</link>
-      <pubDate>Mon, 19 Oct 2020 00:13:02 +0800</pubDate>
+      <pubDate>Mon, 19 Oct 2020 00:13:14 +0800</pubDate>
       
       <guid>https://bijenchen.github.io/tags/roadmap-developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browser</title>
+      <link>https://bijenchen.github.io/tags/browser/</link>
+      <pubDate>Mon, 19 Oct 2020 00:12:47 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/browser/</guid>
       <description></description>
     </item>
     

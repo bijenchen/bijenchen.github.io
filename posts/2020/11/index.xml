@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>11月 on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/posts/2020/11/</link>
+    <description>Recent content in 11月 on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://bijenchen.github.io/posts/2020/11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Su User</title>
+      <link>https://bijenchen.github.io/posts/2020/11/su-user/</link>
+      <pubDate>Tue, 17 Nov 2020 11:45:41 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/11/su-user/</guid>
+      <description>這個單元有點邪惡，除非必要否則不要擅自進行。
+在 linux 中想要偽裝成別的使用者操作的話，可以使用 su ( switch user ) 切換使用者。
+使用的情境像是「要替已經下班的某位同事更新測試機程式」之類的狀況，因為對方的測試機只有當事人能 pull code，所以只好切換成對方的身份進行。
+要注意的是，請確認對方真的沒有登入連線在做事，否則我幫對方 pull code ，可能會把對方正在執行中或修改中的東西蓋掉！
+作法  有 sudo 權限的情況下  使用 sudo su [對方使用者名稱] 指令切換 $ sudo su [user_name] 要求輸入「執行 sudo 指令的使用者」的密碼 commend line 最前面會出現對方使用者帳號 對方使用者名稱@機器名稱:所在路徑$my_partner@my_machine:/home/my_partner_folder$ 使用完畢輸入 exit 指令，跳出偽裝 $ exit    參考資料 這是不用 sudo 的版本
+ How to Use the su Command in Linux with Examples  </description>
+    </item>
+    
+    <item>
+      <title>Sleep</title>
+      <link>https://bijenchen.github.io/posts/2020/11/sleep/</link>
+      <pubDate>Wed, 11 Nov 2020 23:43:12 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/11/sleep/</guid>
+      <description>程式設計時有時候會需要用到「 sleep 」這個概念，
+常見的情境是：需要頻繁訪問嬌貴對象的時候，在訪問中間穿插幾次休息，以免對象被訪問到掛掉。
+例如： 無可避免需要跟資料庫用迴圈大量交易資料時、爬蟲去跟網站伺服器要資料時&amp;hellip;&amp;hellip;
+這時候中間穿插的休息就很重要，適當的休息能降低訪問對象的負擔，
+有時候因為穿插不固定的暫停時間，還能把程式運作偽裝成人類行為。
+但是 sleep 濫用會造成程式執行過久、長時間佔用資源、增加執行失敗的風險等等狀況，
+所以設計時需要注意一些事情：
+ 與資料庫連線時， sleep 的時間約 0.1~0.3 秒即可，視現實狀況再調整。  如果使用了 transaction ，盡量不要讓 transaction 開著太久，造成其他人無法對資料庫內容進行操作， 資料表被鎖住(lock)對自動執行的程式來說很困擾。 sleep 時間設定為浮動的原因，是為了試圖避免總是踩到特定秒數才有的雷，降低執行失敗的機率。   sleep 太久會讓程式執行的時間無謂地延長，增加中間出現變數的風險。  暫時不想深究的疑問：
+ 資料庫、伺服器等等「嬌貴」的原因是什麼？會有讓他們不再嬌貴的可行辦法嗎？  參考資料 以上概念還沒有找到相關資料來佐證，資料待查。
+   </description>
+    </item>
+    
+  </channel>
+</rss>
