@@ -52,6 +52,7 @@
       <description></description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>DNS</title>
       <link>https://bijenchen.github.io/tags/dns/</link>
@@ -70,6 +71,8 @@
       <description></description>
     </item>
     
+=======
+>>>>>>> d7489f002cb35caf9494a1e8420ccde673e56c59
     <item>
       <title>internet</title>
       <link>https://bijenchen.github.io/tags/internet/</link>

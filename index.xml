@@ -17,7 +17,11 @@
 在 linux 中想要偽裝成別的使用者操作的話，可以使用 su ( switch user ) 切換使用者。
 使用的情境像是「要替已經下班的某位同事更新測試機程式」之類的狀況，因為對方的測試機只有當事人能 pull code，所以只好切換成對方的身份進行。
 要注意的是，請確認對方真的沒有登入連線在做事，否則我幫對方 pull code ，可能會把對方正在執行中或修改中的東西蓋掉！
+<<<<<<< HEAD
 作法  有 sudo 權限的情況下  使用 sudo su [對方使用者名稱] 指令切換 $ sudo su [user_name] 要求輸入「執行 sudo 指令的使用者」的密碼 commend line 最前面會出現對方使用者帳號 對方使用者名稱@機器名稱:所在路徑$my_partner@my_machine:/home/my_partner_folder$ 使用完畢輸入 exit 指令，跳出偽裝 $ exit    參考資料 這是不用 sudo 的版本
+=======
+作法  有 sudo 權限的情況下  使用 sudo su [對方使用者名稱] 指令切換 $ sudo su [user_name]  要求輸入「執行 sudo 指令的使用者」的密碼 commend line 最前面會出現對方使用者帳號 對方使用者名稱@機器名稱:所在路徑$ my_partner@my_machine:/home/my_partner_folder$  使用完畢輸入 exit 指令，跳出偽裝 $ exit     參考資料 這是不用 sudo 的版本
+>>>>>>> d7489f002cb35caf9494a1e8420ccde673e56c59
  How to Use the su Command in Linux with Examples  </description>
     </item>
     
@@ -39,6 +43,7 @@
    </description>
     </item>
     
+<<<<<<< HEAD
     <item>
       <title>What Is Domain Name</title>
       <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-domain-name/</link>
@@ -51,6 +56,8 @@ Domain Name 產生的原因 大部分的人類很難記得 IP 這種純數字的
  其他知識  一組 IP 可以擁有很多 Domain Name Domain Name 要去找網路服務商(例如 中華電信Hinet )代為購買 想知道想登記的 Domain Name 是否已被買走，可以用 Whois 查詢登記資料。  參考資料  TWNIC(Taiwan Network Information Center,財團法人台灣網路資訊中心)科普教學文  </description>
     </item>
     
+=======
+>>>>>>> d7489f002cb35caf9494a1e8420ccde673e56c59
     <item>
       <title>Dns and How It Works</title>
       <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/dns-and-how-it-works/</link>
@@ -121,7 +128,7 @@ Browser Engine 負責拿 Rendering Engine 給的資料和 Storage 的內容去�
 (但是我的直覺告訴我：「網頁生成引擎如何運作」這個知識對後端工程師來說逃得了一時、逃不了一世。嗯&amp;hellip;&amp;hellip;希望未來的自己來打臉現在的我？ XD )
 因為我相信實際使用之後才能真正體會三者的差異以及找出自己的偏好，所以借助網路上的比拚文簡單判斷後，就決定從 hugo 開始實驗，反正之後發現不喜歡就換一個嘛～
 碰壁紀錄   遇到 GitHub &amp;ldquo;fatal: remote origin already exists&amp;rdquo;
- 處理方式：重新指定遠端數據庫位置  git remote set-url origin git@github.com:[your_github_account]/[repository].git your_github_account:遠端數據庫擁有者的帳號名稱 repository:遠端數據庫名稱 git remote set-url origin 後面接的就是在 github 上想要用 ssh 下載專案時顯示的專案位址      遇到 error:src refspec master does not match any</description>
+ 處理方式：重新指定遠端數據庫位置  git remote set-url origin git@github.com:[your_github_account]/[repository].git  your_github_account:遠端數據庫擁有者的帳號名稱 repository:遠端數據庫名稱 git remote set-url origin 後面接的就是在 github 上想要用 ssh 下載專案時顯示的專案位址      遇到 error:src refspec master does not match any</description>
     </item>
     
     <item>
