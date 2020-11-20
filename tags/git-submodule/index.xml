@@ -18,7 +18,7 @@
 (但是我的直覺告訴我：「網頁生成引擎如何運作」這個知識對後端工程師來說逃得了一時、逃不了一世。嗯&amp;hellip;&amp;hellip;希望未來的自己來打臉現在的我？ XD )
 因為我相信實際使用之後才能真正體會三者的差異以及找出自己的偏好，所以借助網路上的比拚文簡單判斷後，就決定從 hugo 開始實驗，反正之後發現不喜歡就換一個嘛～
 碰壁紀錄   遇到 GitHub &amp;ldquo;fatal: remote origin already exists&amp;rdquo;
- 處理方式：重新指定遠端數據庫位置  git remote set-url origin git@github.com:[your_github_account]/[repository].git  your_github_account:遠端數據庫擁有者的帳號名稱 repository:遠端數據庫名稱 git remote set-url origin 後面接的就是在 github 上想要用 ssh 下載專案時顯示的專案位址      遇到 error:src refspec master does not match any</description>
+ 處理方式：重新指定遠端數據庫位置  git remote set-url origin git@github.com:[your_github_account]/[repository].git your_github_account:遠端數據庫擁有者的帳號名稱 repository:遠端數據庫名稱 git remote set-url origin 後面接的就是在 github 上想要用 ssh 下載專案時顯示的專案位址      遇到 error:src refspec master does not match any</description>
     </item>
     
   </channel>
