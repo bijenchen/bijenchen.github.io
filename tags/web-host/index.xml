@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web host on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/web-host/</link>
+    <description>Recent content in web host on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Oct 2020 00:13:27 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/web-host/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Hosting</title>
+      <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-hosting/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:27 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-hosting/</guid>
+      <description>Hosting 是什麼 ? 網頁代管(Web Hosting)，將網頁程式碼放到外部可連結的伺服器上，讓他人可以透過網際網路訪問網站內容。
+參考資料  wiki-網頁代管服務 什麼是網頁寄存 (What is Web Hosting)  </description>
+    </item>
+    
+  </channel>
+</rss>
