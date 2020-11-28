@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基礎前端概念 on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/posts/roadmap-developer/backend/basic-frontend-knowledge/</link>
+    <description>Recent content in 基礎前端概念 on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2020 11:23:27 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/posts/roadmap-developer/backend/basic-frontend-knowledge/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

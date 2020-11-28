@@ -6,7 +6,33 @@
     <description>Recent content in internet on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2020 00:13:02 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Oct 2020 00:13:27 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/internet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Is Hosting</title>
+      <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-hosting/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:27 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-hosting/</guid>
+      <description>Hosting 是什麼 ? 網頁代管(Web Hosting)，將網頁程式碼放到外部可連結的伺服器上，讓他人可以透過網際網路訪問網站內容。
+案外案： 那 Hostname 又是什麼？ 在還沒有網際網路的時代，主機之間互相聯絡的方式就是自己製作一份主機的通訊錄(也就是常見的 /etc/hosts 那份檔案)，讓自己記得聯絡對象的 ip ，並且為該 ip 賦予一個我的主機認得的名字。 這個名字就稱為「Hostname」。
+當自己主機要向外聯絡時，會優先去查看通訊錄裡是不是已經認得這個 Hostname ， 不認得時才會向外去 DNS 詢問是否有對應 Domain Name 。
+因此可以做個實驗，在自己的 /etc/hosts 設定某個別的 ip 對應名稱為「www.google.com.tw」，設定完之後自己 ping 一下 www.google.com.tw 。 會發現回應的 ip 不再是 google 的主機 ip ，而是新設定的 ip ，對我自己的主機來說， www.google.com.tw 這個名字已經被別人取代，再也不會連到跟大家一樣的 google 首頁了。
+ 畢竟 DNS 系統是晚於通訊錄方式出現，算是在當時既有的模式之上進行擴充，所以通訊錄查詢會被優先使用也是合理現象。
+ 參考資料  wiki-網頁代管服務 什麼是網頁寄存 (What is Web Hosting)  關於 Hostname 的資料來源待補充  []  </description>
+    </item>
+    
+    <item>
+      <title>What Is Domain Name</title>
+      <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-domain-name/</link>
+      <pubDate>Mon, 19 Oct 2020 00:13:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-domain-name/</guid>
+      <description>Domain Name 是什麼 ? 用來對應特定 IP 的一組有意義文字。
+Domain Name 產生的原因 大部分的人類很難記得 IP 這種純數字的組合，所以設計出「由人類易於辨識的文字代表一組 IP 」的機制。
+ 關於 IP(Internet Protocol,網際網路協定) 的說明，可以參照 網路運作原理
+ 其他知識  一組 IP 可以擁有很多 Domain Name Domain Name 要去找網路服務商(例如 中華電信Hinet )代為購買 想知道想登記的 Domain Name 是否已被買走，可以用 Whois 查詢登記資料。  參考資料  TWNIC(Taiwan Network Information Center,財團法人台灣網路資訊中心)科普教學文  </description>
+    </item>
+    
     <item>
       <title>Dns and How It Works</title>
       <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/dns-and-how-it-works/</link>
