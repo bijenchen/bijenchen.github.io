@@ -6,7 +6,26 @@
     <description>Recent content in experience on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2020 11:45:41 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Nov 2020 18:05:53 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>google sheet 條件格式設定自訂公式</title>
+      <link>https://bijenchen.github.io/posts/2020/11/google-sheet-formula/</link>
+      <pubDate>Mon, 30 Nov 2020 18:05:53 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/11/google-sheet-formula/</guid>
+      <description> 比較 A 欄 與 B 欄差異  套用範圍  B1:B100   自訂公式  $A1&amp;lt;&amp;gt;$B1  意義：同一列的 A 欄 不等於 B 欄，「$」的作用是鎖定，沒有加「$」的數值會隨著判斷變動   如果有複數條件，用 AND()  =AND($A1&amp;lt;&amp;gt;$B1,$C3&amp;lt;&amp;gt;&amp;ldquo;timestamp&amp;rdquo;)  意義：同上，且同一列的 C 欄 不等於 timestamp          注意事項  文字要用雙引號「&amp;quot;」包起來  參考資料  絕對參照與相對參照 Google 試算表函式清單  </description>
+    </item>
+    
+    <item>
+      <title>Select Data</title>
+      <link>https://bijenchen.github.io/posts/2020/11/select-data/</link>
+      <pubDate>Mon, 30 Nov 2020 18:04:49 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/11/select-data/</guid>
+      <description>原則 在決定查詢條件時，先確定報表撈取的目標(為了什麼目的-Why、想看到哪些欄位、如果有一對多的資料時誰該當主表)
+ Why 為了什麼目的？ Where 資料在哪些表( table )裡？ What 想看到哪些欄位？ Who  是不是只要特定範圍的資料？(以「身份」作為限縮條件) 誰要看？需求是什麼？   When 是不是只要特定範圍的資料？(以「時間」作為限縮條件) How 決定 SQL , Subquery? Join?&amp;hellip;&amp;hellip;?  注意事項  如果有一對多的資料時誰該當主表？  依照需求判斷，想要長出怎樣的表？  e.g. table A 對 table B 為一對多 ( table A 1&amp;ndash;* table B ) 如果今天想看的是每筆 B 的 record 對應到 A 的資料，也就是「當 B 有 2 筆(b1,b2)、對應到一筆A資料(a1)時，總資料要有 2 筆」時，應該是這樣： SELECT * FROM table_B JOIN table_A  相反的，如果只在乎能對應到任一 B record 的 table A 資料，會變成： SELECT * FROM table_A JOIN table_B       參考資料     這很基本，小心不要迷失自己！</description>
+    </item>
+    
     <item>
       <title>Su User</title>
       <link>https://bijenchen.github.io/posts/2020/11/su-user/</link>
