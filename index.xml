@@ -69,7 +69,7 @@
 當自己主機要向外聯絡時，會優先去查看通訊錄裡是不是已經認得這個 Hostname ， 不認得時才會向外去 DNS 詢問是否有對應 Domain Name 。
 因此可以做個實驗，在自己的 /etc/hosts 設定某個別的 ip 對應名稱為「www.google.com.tw」，設定完之後自己 ping 一下 www.google.com.tw 。 會發現回應的 ip 不再是 google 的主機 ip ，而是新設定的 ip ，對我自己的主機來說， www.google.com.tw 這個名字已經被別人取代，再也不會連到跟大家一樣的 google 首頁了。
  畢竟 DNS 系統是晚於通訊錄方式出現，算是在當時既有的模式之上進行擴充，所以通訊錄查詢會被優先使用也是合理現象。
- 參考資料  wiki-網頁代管服務 什麼是網頁寄存 (What is Web Hosting)  關於 Hostname 的資料來源待補充  []  </description>
+ 參考資料  wiki-網頁代管服務 什麼是網頁寄存 (What is Web Hosting)  關於 Hostname 的資料來源待補充  []  可能還需要知道的知識  分辨網址列裡的成分：Uniform Resource Identifier Domain name Host name  </description>
     </item>
     
     <item>
@@ -106,6 +106,18 @@ Domain Name 產生的原因 大部分的人類很難記得 IP 這種純數字的
 如何運作  The User Interface The Browser Engine The Rendering Engine Networking JavaScript Interpreter UI Backend Data Persistence/Storage  html,css 的部分由 Rendering Engine (layout engines) 負責解析，解析後拋給瀏覽器(Browser Engine)引擎。 JavaScript 編譯出來的內容也由 Rendering Engine 收集、網路連線也是 Rendering Engine 處理。
 Browser Engine 負責拿 Rendering Engine 給的資料和 Storage 的內容去長畫面給人類看。
 參考資料  wiki How does web browsers work?  </description>
+    </item>
+    
+    <item>
+      <title>What Is Http</title>
+      <link>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-http/</link>
+      <pubDate>Mon, 19 Oct 2020 00:11:41 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-http/</guid>
+      <description>Http 是什麼 ? 偷 Mars 的定義來用XD 「HTTP 是一個跑在應用層(Application Layer)上，client與server之間，request和response的標準。」
+也就是用來讓 client 與 server 都能讀懂，彼此互相溝通的東西。
+ ＊ 應用層(Application Layer) 是什麼？ 關於網路階層，開另一篇介紹。
+ 參考資料  MarsW的部落格  </description>
     </item>
     
     <item>

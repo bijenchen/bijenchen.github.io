@@ -18,7 +18,7 @@
 當自己主機要向外聯絡時，會優先去查看通訊錄裡是不是已經認得這個 Hostname ， 不認得時才會向外去 DNS 詢問是否有對應 Domain Name 。
 因此可以做個實驗，在自己的 /etc/hosts 設定某個別的 ip 對應名稱為「www.google.com.tw」，設定完之後自己 ping 一下 www.google.com.tw 。 會發現回應的 ip 不再是 google 的主機 ip ，而是新設定的 ip ，對我自己的主機來說， www.google.com.tw 這個名字已經被別人取代，再也不會連到跟大家一樣的 google 首頁了。
  畢竟 DNS 系統是晚於通訊錄方式出現，算是在當時既有的模式之上進行擴充，所以通訊錄查詢會被優先使用也是合理現象。
- 參考資料  wiki-網頁代管服務 什麼是網頁寄存 (What is Web Hosting)  關於 Hostname 的資料來源待補充  []  </description>
+ 參考資料  wiki-網頁代管服務 什麼是網頁寄存 (What is Web Hosting)  關於 Hostname 的資料來源待補充  []  可能還需要知道的知識  分辨網址列裡的成分：Uniform Resource Identifier Domain name Host name  </description>
     </item>
     
   </channel>
