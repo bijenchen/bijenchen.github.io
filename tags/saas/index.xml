@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SaaS on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/saas/</link>
+    <description>Recent content in SaaS on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 11:44:18 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/saas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XaaS</title>
+      <link>https://bijenchen.github.io/posts/2020/12/xaas/</link>
+      <pubDate>Tue, 01 Dec 2020 11:44:18 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/12/xaas/</guid>
+      <description>基於雲端運算的系列衍生  SaaS  Software as a Service, 軟體即服務 軟體僅需通過網路，不須經過傳統的安裝步驟即可使用，軟體及其相關的資料集中代管於雲端服務。   IaaS  Infrastructure as a Service, 基礎設施即服務   PaaS  platform as a service, 平台即服務   FaaS  無伺服器運算（英語：Serverless computing），Function-as-a-Service,功能即服務   EaaS  好啊，大家都要來 &amp;ldquo;aaS&amp;rdquo; 一下，2020 臺灣教育科技展的標語是「Education as a Service」&amp;hellip;&amp;hellip;好喔～XD    參考資料  SaaS IaaS PaaS FaaS  </description>
+    </item>
+    
+  </channel>
+</rss>

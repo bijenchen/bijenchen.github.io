@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compare on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/compare/</link>
+    <description>Recent content in compare on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 15:03:13 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/compare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compare</title>
+      <link>https://bijenchen.github.io/posts/2020/12/compare/</link>
+      <pubDate>Fri, 18 Dec 2020 15:03:13 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/12/compare/</guid>
+      <description>比較差異 比較大小 真實世界裡，可以量化、數值化、比較基準一致時，才有「比較大小」的意義。在電腦科學的世界裡也一樣，就算實際上程式不會報錯，也不是所有東西都應該用來比大小。
+可以比大小的東西  數值、數字 日期時間(格式應為 timestamp, microsecond, &amp;hellip;&amp;hellip;，不是字串)  php  DateTime 系列   JavaScript  new Date() 將字串變成日期型別 Date.parse()      「不要」拿來比大小的東西  字串  因為字串會被轉成 ascii code, 依照 ascii code 的順序決定孰大孰小，在通常的情境下，字串比大小並沒有意義，比出來也不見得是預想中的效果。    常見錯誤  &amp;lsquo;2&amp;rsquo;&amp;gt;&amp;lsquo;1&amp;rsquo;  拿字串格式的數字字元比大小   &amp;lsquo;2020-12-21&amp;rsquo;&amp;gt;&amp;lsquo;2020-12-01&amp;rsquo;  拿字串格式的日期比大小    參考資料  PHP - The DateTime class JavaScript - Date JavaScript - How to Compare Two Dates In JavaScript JavaScript - Date.</description>
+    </item>
+    
+  </channel>
+</rss>
