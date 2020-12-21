@@ -6,7 +6,16 @@
     <description>Recent content in SQL on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Nov 2020 18:04:49 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 15:18:34 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Syntax : CASE</title>
+      <link>https://bijenchen.github.io/posts/2020/12/sql-case/</link>
+      <pubDate>Mon, 21 Dec 2020 15:18:34 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/12/sql-case/</guid>
+      <description>SELECT CASE (&amp;quot;欄位名&amp;quot;) AS &amp;quot;別名&amp;quot; WHEN &amp;quot;條件1&amp;quot; THEN &amp;quot;結果1&amp;quot; WHEN &amp;quot;條件2&amp;quot; THEN &amp;quot;結果2&amp;quot; ... [ELSE &amp;quot;結果N&amp;quot;] END FROM &amp;quot;表格名&amp;quot;; 參考資料  SQL CASE  </description>
+    </item>
+    
     <item>
       <title>Select Data</title>
       <link>https://bijenchen.github.io/posts/2020/11/select-data/</link>
