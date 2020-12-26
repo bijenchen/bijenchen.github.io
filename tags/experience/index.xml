@@ -6,7 +6,19 @@
     <description>Recent content in experience on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Dec 2020 15:18:34 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Dec 2020 09:12:41 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/experience/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Index of Database</title>
+      <link>https://bijenchen.github.io/posts/2020/12/database-index/</link>
+      <pubDate>Tue, 22 Dec 2020 09:12:41 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2020/12/database-index/</guid>
+      <description>索引的目的 為了讓找資料更快。但是這個「更快」是跟誰比較？是跟「沒有索引時從頭逐項查找」相比。
+在查詢資料時索引值的用處 舉例有個資料表長這樣: table_A
+   column is index ?     id v   name      如果現在搜尋的是索引欄位 SELECT * FROM table_A WHERE id = 3 會用 B+ 樹的概念搜尋 如果現在搜尋的不是索引欄位 SELECT * FROM table_A WHERE name = &amp;quot;Dingo&amp;quot; 跟沒設定索引一樣，只能逐筆找  索引類型 在 InnoDB 中，它有提供的索引基本上分為兩大類 :
+ clustered Index secondary Index  覆蓋索引 ( covering index ) (預設)  內涵:????   連合索引 ( compound index )  內涵:用複數欄位組合成一組索引，建立的順序會影響 index 是否能成功使用以及 WHERE 條件如何下。   前綴索引 ( prefix index )  內涵:?</description>
+    </item>
+    
     <item>
       <title>SQL Syntax : CASE</title>
       <link>https://bijenchen.github.io/posts/2020/12/sql-case/</link>
