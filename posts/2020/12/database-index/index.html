@@ -12,19 +12,19 @@
     <title>Index of Database :: 文科人的資訊筆記</title>
 
     
-    <link href="/css/nucleus.css?1609806587" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1609806587" rel="stylesheet">
-    <link href="/css/hybrid.css?1609806587" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1609806587" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1609806587" rel="stylesheet">
-    <link href="/css/auto-complete.css?1609806587" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1609806587" rel="stylesheet">
-    <link href="/css/theme.css?1609806587" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1609806587" rel="stylesheet">
+    <link href="/css/nucleus.css?1610247050" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1610247050" rel="stylesheet">
+    <link href="/css/hybrid.css?1610247050" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1610247050" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1610247050" rel="stylesheet">
+    <link href="/css/auto-complete.css?1610247050" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1610247050" rel="stylesheet">
+    <link href="/css/theme.css?1610247050" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1610247050" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1609806587"></script>
+    <script src="/js/jquery-3.3.1.min.js?1610247050"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
   <p class="publish-date" >發布日期：Dec 22, 2020</p>
 
   
-      <p class="update-date">文章於 Jan 5, 2021 更新</p>
+      <p class="update-date">文章於 Jan 10, 2021 更新</p>
   
 
 
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1609806587"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1609806587"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1610247050"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1610247050"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bijenchen.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1609806587"></script>
+<script type="text/javascript" src="/js/search.js?1610247050"></script>
 
     
   </div>
@@ -676,7 +676,7 @@
     
       <li data-nav-id="/posts/2020/11/su-user/" title="Su User" class="dd-item ">
         <a href="/posts/2020/11/su-user/">
-        在 linux 裡用指令切換使用者
+        <b>[工作筆記] </b>在 linux 裡用指令切換使用者
         
         </a>
     </li>
@@ -985,33 +985,39 @@
 <h1 id="索引的目的">索引的目的</h1>
 <p>為了讓找資料更快。但是這個「更快」是跟誰比較？是跟「沒有索引時從頭逐項查找」相比。</p>
 <blockquote>
-<p>【情境模擬】 假設我們上網徵求「動畫推薦」，得到一些回應像這樣：
-18:30 A網友「鋼鍊啦鋼鍊！」
-18:45 B網友「有鋼鍊那也要推個銀之匙才行」
-19:10 C網友「魔法阿嬤」
-19:12 D網友「樂園追放，讚」
-20:07 E網友「月刊少女野崎同學，會看到笑死」
-21:17 F網友「夏目友人帳～」</p>
-<p>所以我們得到了一份原始資料長這樣：
-鋼之鍊金術師
-銀之匙
-魔法阿嬤
-樂園追放
-月刊少女野崎同學
-夏目友人帳</p>
-<p>當我們想要找這份動畫推薦清單裡有沒有某部動畫時，
-最原始的做法就是從第一個檢查最後一個，這也是資料庫最原始的搜尋資料方式。</p>
-<p>如果今天有人問我「樂園追放」這部動畫有沒有在清單裡？
-我的印象是「我記得中間有人畫風一變，推了個『魔法阿嬤』，然後後面回答馬上又用『樂園追放』把畫風修回日本動畫了 XD」
-這時候就有點帶進了「索引」觀念，因為這次我們不是一筆一筆檢查，而是直接由「魔法阿嬤」切入，
-找到緊接在後的「樂園追放」，當清單內容變多時，「直接從某點切入搜索」的速度有很高的機率會比「逐項尋找」快速。</p>
-<p>演算法裡的「二元搜尋樹」也是這樣的概念。找資料時從當下的切入點開始兵分兩路，直到找到目標。
-「你要找的動畫是『魔法阿嬤』嗎？」 &ndash;&gt; 不是
-「資料在『魔法阿嬤』之前還是之後？」 &ndash;&gt; 之後
-「資料在『月刊少女野崎同學』之前還是之後？」 &ndash;&gt; 之前
-「你要找的動畫是『樂園追放』嗎？」 &ndash;&gt; 是</p>
-<p>更進一步，我們也可以將資料進行排序，例如將動畫按照出版年份或者作品名字的字數排序，試著加快搜尋的過程，
-這就是不同索引方式的演進。</p>
+<p>【情境模擬】 假設我們上網徵求「動畫推薦」，得到一些回應像這樣：</p>
+<blockquote>
+<p>18:30 A網友「鋼鍊啦鋼鍊！」</p>
+<p>18:45 B網友「有鋼鍊那也要推個銀之匙才行」</p>
+<p>19:10 C網友「魔法阿嬤」</p>
+<p>19:12 D網友「樂園追放，讚」</p>
+<p>20:07 E網友「月刊少女野崎同學，會看到笑死」</p>
+<p>21:17 F網友「夏目友人帳～」</p>
+</blockquote>
+<p>所以我們得到了一份原始資料長這樣：</p>
+<blockquote>
+<p>鋼之鍊金術師</p>
+<p>銀之匙</p>
+<p>魔法阿嬤</p>
+<p>樂園追放</p>
+<p>月刊少女野崎同學</p>
+<p>夏目友人帳</p>
+</blockquote>
+<p>當我們想要找這份動畫推薦清單裡有沒有某部動畫時，</p>
+<p>最原始的做法就是從第一個檢查最後一個，這也是資料庫最原始的搜尋資料方式。</p>
+<p>如果今天有人問我「樂園追放」這部動畫有沒有在清單裡？</p>
+<p>我的印象是「我記得中間有人畫風一變，推了個『魔法阿嬤』，然後後面回答馬上又用『樂園追放』把畫風修回日本動畫了 XD」</p>
+<p>這時候就有點帶進了「索引」觀念，因為這次我們不是一筆一筆檢查，而是直接由「魔法阿嬤」切入，找到緊接在後的「樂園追放」。</p>
+<p>當清單內容變多時，「直接從某點切入搜索」的速度有很高的機率會比「逐項尋找」快速。</p>
+<p>演算法裡的「二元搜尋樹」也是這樣的概念。找資料時從當下的切入點開始兵分兩路，直到找到目標。</p>
+<blockquote>
+<p>「你要找的動畫是『魔法阿嬤』嗎？」 &ndash;&gt; 不是</p>
+<p>「資料在『魔法阿嬤』之前還是之後？」 &ndash;&gt; 之後</p>
+<p>「資料在『月刊少女野崎同學』之前還是之後？」 &ndash;&gt; 之前</p>
+<p>「你要找的動畫是『樂園追放』嗎？」 &ndash;&gt; 是</p>
+</blockquote>
+<p>更進一步，我們也可以將資料進行排序，例如將動畫按照出版年份或者作品名字的字數排序，試著加快搜尋的過程，</p>
+<p>這就是不同索引方式的演進。</p>
 </blockquote>
 <h1 id="索引的實現">索引的實現</h1>
 <p>「索引」概念是強烈吃重演算法觀念的領域，「要如何安排資料才能找得更快、耗能更低」正是演算法大展長才之處。
@@ -1712,19 +1718,19 @@ table_A</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1609806587"></script>
-    <script src="/js/perfect-scrollbar.min.js?1609806587"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1609806587"></script>
-    <script src="/js/jquery.sticky.js?1609806587"></script>
-    <script src="/js/featherlight.min.js?1609806587"></script>
-    <script src="/js/highlight.pack.js?1609806587"></script>
+    <script src="/js/clipboard.min.js?1610247050"></script>
+    <script src="/js/perfect-scrollbar.min.js?1610247050"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1610247050"></script>
+    <script src="/js/jquery.sticky.js?1610247050"></script>
+    <script src="/js/featherlight.min.js?1610247050"></script>
+    <script src="/js/highlight.pack.js?1610247050"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1609806587"></script>
-    <script src="/js/learn.js?1609806587"></script>
-    <script src="/js/hugo-learn.js?1609806587"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1610247050"></script>
+    <script src="/js/learn.js?1610247050"></script>
+    <script src="/js/hugo-learn.js?1610247050"></script>
     
         
-            <script src="/mermaid/mermaid.js?1609806587"></script>
+            <script src="/mermaid/mermaid.js?1610247050"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
