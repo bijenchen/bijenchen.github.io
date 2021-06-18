@@ -21,7 +21,8 @@
 所以，假設現在情境是要登入遠端伺服器，我們就會用手上持有的「遠端伺服器公鑰」把登入資訊加密，接著傳送給遠端伺服器。
 伺服器因此會收到「以伺服器公鑰加密過的資料」，這時候因為伺服器手上握有跟這個伺服器公鑰成對的伺服器私鑰，所以可以用伺服器私鑰正確解密。
 解密完後伺服器就會看到我們的登入資訊，因而放行讓我們登入。
-參考資料  你該知道所有關於 SSH 的那些事 第十一章、遠端連線伺服器SSH / XDMCP / VNC / RDP  延伸閱讀  How to Create SSH Tunneling or Port Forwarding in Linux SSH Config File  </description>
+如何增加 ssh key 到 bitbucket 中，並且使用自訂的 hostname 連線資訊 如何使用不同的 ssh key 連線 在 .ssh 目錄下建立 config 檔案 /Users/bijen/.ssh 注意， config 檔案要跟 private &amp;amp; public key 放在相同層級中。
+config 內容寫法 Host [your-ssh-name / 未來使用ssh連線時的代稱，可自行取名] HostName [ip or domain / 連線的目的地 ip 或 domain name] User [connect-account / 用來連線的帳號] PreferredAuthentications [驗證方式] IdentitiesOnly [是否只接受 ssh key 登入] IdentityFile [absolute path/ 用來驗證的檔案絕對位置，例如 public key path] UseKeychain [?</description>
     </item>
     
     <item>
@@ -58,7 +59,8 @@ Domain Name 產生的原因 大部分的人類很難記得 IP 這種純數字的
       <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/dns-and-how-it-works/</guid>
       <description>DNS 是什麼 ? 他們是如何運作 ? DNS 是什麼 Domain Name System ，紀錄數字IP與文字網址對應關係的地方。 概念上像是把我家的經緯度座標變成中文地址的地政系統一樣的東西。
 如何運作 就是把「 IP 」與「對應的網址」的對應關係存起來，讓人類可以雙向查詢對應內容。
-參考資料  wiki aws  </description>
+domain name 與 hostname 的不同  domain name: 網域名稱 hostname: 主機名稱  舉例: www.abcabc.com.tw
+ 有一台提供 .tw 網域的主機 (hostname 叫做: tw) 隸屬於 .tw 網域底下，有一台提供 com.tw 網域的主機 (hostname 叫做: com) 隸屬於 com.tw 網域底下，有一台提供 abcabc.com.tw 網域的主機 (hostname 叫做: abcabc) 隸屬於 abcabc.com.tw 網域底下，有一台提供 www 服務的主機 (hostname 叫做: www)  參考資料  wiki aws 第十九章、主機名稱控制者： DNS 伺服器  domain name 與 hostname 的不同    </description>
     </item>
     
     <item>

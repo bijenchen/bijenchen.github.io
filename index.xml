@@ -6,7 +6,46 @@
     <description>Recent content on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Dec 2020 10:57:19 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Jun 2021 16:28:08 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20210618</title>
+      <link>https://bijenchen.github.io/work-journal/20210618/</link>
+      <pubDate>Fri, 18 Jun 2021 16:28:08 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210618/</guid>
+      <description>事件紀錄 (一)
+看到同事用 -&amp;gt;addBinding($LaravelEloquentObject-&amp;gt;getBindings()) 取代原本的寫法 -&amp;gt;mergeBindings($LaravelEloquentObject-&amp;gt;getQuery())
+想知道差異在哪裡？待查。
+(二)
+疑問：
+在不需要關聯別的表、也沒有 subquery 出其他別名的情況下，還需要特地指定是拿哪個表的欄位嗎?
+原始SQL概念
+SELECT employee.id FROM employee Laravel Eloquent ORM 寫法
+## parent: /** * 建立資料 * @param array $entity_data * @return |null */ public function createEntity(array $entity_data) { $Entity = null; if ($this-&amp;gt;Entity instanceof Model) { $Entity = $this-&amp;gt;Entity-&amp;gt;create($entity_data); } return $Entity; } ## main public function __construct() { $this-&amp;gt;Employee = app()-&amp;gt;make(Employee::class); $this-&amp;gt;employee_table_name = $this-&amp;gt;Employee-&amp;gt;getTable(); parent::__construct(); } public function getCompanyEmployeeCount() { // 資料表名稱  $employee_table_name = $this-&amp;gt;employee_table_name; // 自訂欄位  $custom_select_field = [ &amp;#34;{$employee_table_name}.</description>
+    </item>
+    
+    <item>
+      <title>報恩報仇不二做，工作反省不貳過！</title>
+      <link>https://bijenchen.github.io/work-journal/20210617/</link>
+      <pubDate>Fri, 18 Jun 2021 13:03:23 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210617/</guid>
+      <description>事件紀錄 這週犯了數個低級錯誤，必須反省！
+(一)
+都寫程式多久了！複製貼上相似功能的 code ， namespace 怎麼可以不檢查？在那邊亂寫！
+程式不只要正確執行，產生對的結果，還要好維護！ namespace 不寫好、 class 開頭不宣告引用物件，日後追程式是要追到何時？用全域搜尋硬幹嗎？！反省！
+(二)
+能元件化的程式片段，要記得拆出來，未來的你會感謝自己。
+(三)
+遵照 gitflow 從 dev 開分支，功能完成記得取最新的 dev 併進來測試， sourcetree 的 fetch 多按幾次，不要被陰了！併完要順便檢查 submodule 版本有沒有都吃對，通過測試才能發 PR 合回去 dev ，基本原則要做到變成膝反射，知不知道！
+(四)
+已知用 hugo Archetypes document
+總結 1. 工作技能有沒有因此成長了？ 差點沒有，已知的知識怎麼可以犯錯！
+還好還長了 hugo Archetypes 知識，略為欣慰。
+2. 計畫如何改善現況或者可以試著做得更好？ 1. 貼 code 過來把 namespace &amp;amp; use 刪乾淨，用套件重新引入。 2. sourcetree 的 fetch 給我多按幾次！  3. 如何在這件事上提升效率？ 把基本功訓練成膝跳反射！
+4. 有沒有把時間花在刀口上？ 沒有！重複犯錯是浪費時間！ hugo 技能只對做筆記有幫助。</description>
+    </item>
+    
     <item>
       <title>SSH</title>
       <link>https://bijenchen.github.io/posts/roadmap-developer/general/ssh/</link>
@@ -21,7 +60,8 @@
 所以，假設現在情境是要登入遠端伺服器，我們就會用手上持有的「遠端伺服器公鑰」把登入資訊加密，接著傳送給遠端伺服器。
 伺服器因此會收到「以伺服器公鑰加密過的資料」，這時候因為伺服器手上握有跟這個伺服器公鑰成對的伺服器私鑰，所以可以用伺服器私鑰正確解密。
 解密完後伺服器就會看到我們的登入資訊，因而放行讓我們登入。
-參考資料  你該知道所有關於 SSH 的那些事 第十一章、遠端連線伺服器SSH / XDMCP / VNC / RDP  延伸閱讀  How to Create SSH Tunneling or Port Forwarding in Linux SSH Config File  </description>
+如何增加 ssh key 到 bitbucket 中，並且使用自訂的 hostname 連線資訊 如何使用不同的 ssh key 連線 在 .ssh 目錄下建立 config 檔案 /Users/bijen/.ssh 注意， config 檔案要跟 private &amp;amp; public key 放在相同層級中。
+config 內容寫法 Host [your-ssh-name / 未來使用ssh連線時的代稱，可自行取名] HostName [ip or domain / 連線的目的地 ip 或 domain name] User [connect-account / 用來連線的帳號] PreferredAuthentications [驗證方式] IdentitiesOnly [是否只接受 ssh key 登入] IdentityFile [absolute path/ 用來驗證的檔案絕對位置，例如 public key path] UseKeychain [?</description>
     </item>
     
     <item>
@@ -178,7 +218,8 @@ Domain Name 產生的原因 大部分的人類很難記得 IP 這種純數字的
       <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/dns-and-how-it-works/</guid>
       <description>DNS 是什麼 ? 他們是如何運作 ? DNS 是什麼 Domain Name System ，紀錄數字IP與文字網址對應關係的地方。 概念上像是把我家的經緯度座標變成中文地址的地政系統一樣的東西。
 如何運作 就是把「 IP 」與「對應的網址」的對應關係存起來，讓人類可以雙向查詢對應內容。
-參考資料  wiki aws  </description>
+domain name 與 hostname 的不同  domain name: 網域名稱 hostname: 主機名稱  舉例: www.abcabc.com.tw
+ 有一台提供 .tw 網域的主機 (hostname 叫做: tw) 隸屬於 .tw 網域底下，有一台提供 com.tw 網域的主機 (hostname 叫做: com) 隸屬於 com.tw 網域底下，有一台提供 abcabc.com.tw 網域的主機 (hostname 叫做: abcabc) 隸屬於 abcabc.com.tw 網域底下，有一台提供 www 服務的主機 (hostname 叫做: www)  參考資料  wiki aws 第十九章、主機名稱控制者： DNS 伺服器  domain name 與 hostname 的不同    </description>
     </item>
     
     <item>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work-journals on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/work-journal/</link>
+    <description>Recent content in Work-journals on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Jun 2021 16:28:08 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/work-journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20210618</title>
+      <link>https://bijenchen.github.io/work-journal/20210618/</link>
+      <pubDate>Fri, 18 Jun 2021 16:28:08 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210618/</guid>
+      <description>事件紀錄 (一)
+看到同事用 -&amp;gt;addBinding($LaravelEloquentObject-&amp;gt;getBindings()) 取代原本的寫法 -&amp;gt;mergeBindings($LaravelEloquentObject-&amp;gt;getQuery())
+想知道差異在哪裡？待查。
+(二)
+疑問：
+在不需要關聯別的表、也沒有 subquery 出其他別名的情況下，還需要特地指定是拿哪個表的欄位嗎?
+原始SQL概念
+SELECT employee.id FROM employee Laravel Eloquent ORM 寫法
+## parent: /** * 建立資料 * @param array $entity_data * @return |null */ public function createEntity(array $entity_data) { $Entity = null; if ($this-&amp;gt;Entity instanceof Model) { $Entity = $this-&amp;gt;Entity-&amp;gt;create($entity_data); } return $Entity; } ## main public function __construct() { $this-&amp;gt;Employee = app()-&amp;gt;make(Employee::class); $this-&amp;gt;employee_table_name = $this-&amp;gt;Employee-&amp;gt;getTable(); parent::__construct(); } public function getCompanyEmployeeCount() { // 資料表名稱  $employee_table_name = $this-&amp;gt;employee_table_name; // 自訂欄位  $custom_select_field = [ &amp;#34;{$employee_table_name}.</description>
+    </item>
+    
+    <item>
+      <title>報恩報仇不二做，工作反省不貳過！</title>
+      <link>https://bijenchen.github.io/work-journal/20210617/</link>
+      <pubDate>Fri, 18 Jun 2021 13:03:23 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210617/</guid>
+      <description>事件紀錄 這週犯了數個低級錯誤，必須反省！
+(一)
+都寫程式多久了！複製貼上相似功能的 code ， namespace 怎麼可以不檢查？在那邊亂寫！
+程式不只要正確執行，產生對的結果，還要好維護！ namespace 不寫好、 class 開頭不宣告引用物件，日後追程式是要追到何時？用全域搜尋硬幹嗎？！反省！
+(二)
+能元件化的程式片段，要記得拆出來，未來的你會感謝自己。
+(三)
+遵照 gitflow 從 dev 開分支，功能完成記得取最新的 dev 併進來測試， sourcetree 的 fetch 多按幾次，不要被陰了！併完要順便檢查 submodule 版本有沒有都吃對，通過測試才能發 PR 合回去 dev ，基本原則要做到變成膝反射，知不知道！
+(四)
+已知用 hugo Archetypes document
+總結 1. 工作技能有沒有因此成長了？ 差點沒有，已知的知識怎麼可以犯錯！
+還好還長了 hugo Archetypes 知識，略為欣慰。
+2. 計畫如何改善現況或者可以試著做得更好？ 1. 貼 code 過來把 namespace &amp;amp; use 刪乾淨，用套件重新引入。 2. sourcetree 的 fetch 給我多按幾次！  3. 如何在這件事上提升效率？ 把基本功訓練成膝跳反射！
+4. 有沒有把時間花在刀口上？ 沒有！重複犯錯是浪費時間！ hugo 技能只對做筆記有幫助。</description>
+    </item>
+    
+  </channel>
+</rss>

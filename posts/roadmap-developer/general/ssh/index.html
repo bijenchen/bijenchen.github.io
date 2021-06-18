@@ -12,19 +12,19 @@
     <title>SSH :: 文科人的資訊筆記</title>
 
     
-    <link href="/css/nucleus.css?1610247050" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1610247050" rel="stylesheet">
-    <link href="/css/hybrid.css?1610247050" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1610247050" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1610247050" rel="stylesheet">
-    <link href="/css/auto-complete.css?1610247050" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1610247050" rel="stylesheet">
-    <link href="/css/theme.css?1610247050" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1610247050" rel="stylesheet">
+    <link href="/css/nucleus.css?1624008690" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1624008690" rel="stylesheet">
+    <link href="/css/hybrid.css?1624008690" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1624008690" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1624008690" rel="stylesheet">
+    <link href="/css/auto-complete.css?1624008690" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1624008690" rel="stylesheet">
+    <link href="/css/theme.css?1624008690" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1624008690" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1610247050"></script>
+    <script src="/js/jquery-3.3.1.min.js?1624008690"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -44,7 +44,7 @@
   <p class="publish-date" >發布日期：Dec 26, 2020</p>
 
   
-      <p class="update-date">文章於 Dec 26, 2020 更新</p>
+      <p class="update-date">文章於 May 14, 2021 更新</p>
   
 
 
@@ -73,14 +73,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1610247050"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1610247050"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1624008690"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1624008690"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/bijenchen.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1610247050"></script>
+<script type="text/javascript" src="/js/search.js?1624008690"></script>
 
     
   </div>
@@ -89,6 +89,82 @@
     <ul class="topics">
 
         
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/work-journal/" title="Work-journals" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/work-journal/">
+          Work-journals
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/work-journal/20210618/" title="20210618" class="dd-item ">
+        <a href="/work-journal/20210618/">
+        <b>[工作日誌] </b>20210618
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/work-journal/20210617/" title="報恩報仇不二做，工作反省不貳過！" class="dd-item ">
+        <a href="/work-journal/20210617/">
+        <b>[工作日誌] </b>20210617
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
           
           
 
@@ -845,6 +921,70 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/2021/" title="2021" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/posts/2021/">
+          2021
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/posts/2021/05/" title="05月" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/posts/2021/05/">
+          05月
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
         
         </ul>
               
@@ -945,6 +1085,18 @@
         <li><a href="#過程">過程</a></li>
       </ul>
     </li>
+    <li><a href="#如何增加-ssh-key-到-bitbucket-中並且使用自訂的-hostname">如何增加 ssh key 到 bitbucket 中，並且使用自訂的 hostname</a>
+      <ul>
+        <li><a href="#連線資訊">連線資訊</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何使用不同的-ssh-key-連線">如何使用不同的 ssh key 連線</a>
+      <ul>
+        <li><a href="#在-ssh-目錄下建立-config-檔案">在 .ssh 目錄下建立 config 檔案</a></li>
+        <li><a href="#config-內容寫法">config 內容寫法</a></li>
+      </ul>
+    </li>
+    <li><a href="#如何使用-ssh-tunnel-連線-port-轉發">如何使用 ssh tunnel 連線 port 轉發</a></li>
     <li><a href="#參考資料">參考資料</a></li>
     <li><a href="#延伸閱讀">延伸閱讀</a></li>
   </ul>
@@ -994,15 +1146,121 @@
 <p>所以，假設現在情境是要登入遠端伺服器，我們就會用手上持有的「遠端伺服器公鑰」把登入資訊加密，接著傳送給遠端伺服器。</p>
 <p>伺服器因此會收到「以伺服器公鑰加密過的資料」，這時候因為伺服器手上握有跟這個伺服器公鑰成對的伺服器私鑰，所以可以用伺服器私鑰正確解密。</p>
 <p>解密完後伺服器就會看到我們的登入資訊，因而放行讓我們登入。</p>
-<h2 id="參考資料">參考資料</h2>
+<h2 id="如何增加-ssh-key-到-bitbucket-中並且使用自訂的-hostname">如何增加 ssh key 到 bitbucket 中，並且使用自訂的 hostname</h2>
+<h3 id="連線資訊">連線資訊</h3>
+<p><img src="https://i.imgur.com/AqxzkWO.png" alt=""></p>
+<h2 id="如何使用不同的-ssh-key-連線">如何使用不同的 ssh key 連線</h2>
+<h3 id="在-ssh-目錄下建立-config-檔案">在 .ssh 目錄下建立 config 檔案</h3>
+<pre><code>/Users/bijen/.ssh
+</code></pre><p>注意， config 檔案要跟 private &amp; public key 放在相同層級中。</p>
+<h3 id="config-內容寫法">config 內容寫法</h3>
+<pre><code>Host [your-ssh-name / 未來使用ssh連線時的代稱，可自行取名]
+    HostName [ip or domain / 連線的目的地 ip 或 domain name]
+    User [connect-account / 用來連線的帳號]
+    PreferredAuthentications [驗證方式]
+    IdentitiesOnly [是否只接受 ssh key 登入]
+    IdentityFile [absolute path/ 用來驗證的檔案絕對位置，例如 public key path]
+    UseKeychain [?待查]
+    AddKeysToAgent [將連線密鑰存到連線目的地?待查]
+</code></pre><h4 id="示範">示範</h4>
+<pre><code>Host bijen-bitbucket
+    HostName bitbucket.org
+    User git
+    PreferredAuthentications publickey
+    IdentitiesOnly no
+    IdentityFile /Users/bijen/.ssh/id_rsa_bijen_bitbucket
+    UseKeychain yes
+    AddKeysToAgent yes
+
+Host bijen-gcp
+    HostName [104.199.xxx.xx/ my-gcp-server-ip]
+    User bijen.chen
+    PreferredAuthentications publickey
+    IdentitiesOnly no
+    IdentityFile /Users/bijen/.ssh/id_rsa_bijen
+    UseKeychain yes
+    AddKeysToAgent yes
+
+Host bijen-aws
+    HostName [my-aws-server-ip]
+    User bijen.chen
+    PreferredAuthentications publickey
+    IdentitiesOnly no
+    IdentityFile /Users/bijen/.ssh/id_rsa_bijen
+    UseKeychain yes
+    AddKeysToAgent yes
+</code></pre><h4 id="說明">說明</h4>
+<h5 id="當我想連線至-bitbucket-時">當我想連線至 bitbucket 時</h5>
+<ol>
+<li>terminal 輸入 <code>ssh bijen-bitbucket</code></li>
+<li>此時會用以下資訊連線至 bitbucket.org
+<ul>
+<li>使用者帳號: git</li>
+<li>密鑰: id_rsa_bijen_bitbucket</li>
+</ul>
+</li>
+</ol>
+<h5 id="當我想連線至-gcp--aws-時">當我想連線至 gcp / aws 時</h5>
+<ol>
+<li>terminal 輸入 <code>ssh bijen-gcp</code> / <code>ssh bijen-aws</code></li>
+<li>此時會用以下資訊連線至 gcp / aws 的 ip
+<ul>
+<li>使用者帳號: bijen.chen</li>
+<li>密鑰: id_rsa_bijen</li>
+</ul>
+</li>
+</ol>
+<p>==note: 可以用相同的密鑰連線至不同的 server，不見得都要用不一樣的登入名稱與密鑰==</p>
+<h2 id="如何使用-ssh-tunnel-連線-port-轉發">如何使用 ssh tunnel 連線 port 轉發</h2>
+<pre><code>ssh -L &lt;本地端 port&gt;:&lt;遠端主機 ip / dns&gt;:&lt;遠端主機 port&gt; &lt;ssh 連線遠端主機 ip / dns&gt;
+</code></pre><p>可以設定由本地指定 port 與遠端指定 port 對接，同時指定對接的身份，所以也可以達到透過跳板連線到遠端主機的目的。
+舉例如下:</p>
+<p>本地 33066 port 想要連線至遠端伺服器的 3306 port，分兩種情況：</p>
+<ol>
+<li>本地有 ssh 至遠端伺服器的權限時</li>
+</ol>
+<pre><code>ssh -L 33066:&lt;remote-ip/dns&gt;:3306 -N &lt;ssh-user&gt;@&lt;remote-ip/dns&gt;
+</code></pre><ol start="2">
+<li>本地無 ssh 至遠端伺服器的權限，但中介伺服器有權限時</li>
+</ol>
+<pre><code>ssh -L 33066:&lt;A-remote-ip/dns&gt;:3306 -N &lt;ssh-user&gt;@&lt;B-remote-ip/dns&gt;
+</code></pre><p>說明:</p>
+<p>示範中的「A-remote」是遠端 mysql 資料庫所在的伺服器，本地無權連線。</p>
+<p>但是本地可連線至中介伺服器「B-remote」，「B-remote」的該登入使用者(ssh-user)是有權連線至「A-remote」的，</p>
+<p>所以此時的 ssh tunnel 行為會是：</p>
+<p>以 127.0.0.1 (=本地) 33066 port 接上 B-remote 的 33066 port ， B-remote 再以「 B-remote 本地」的身份，以「B-remote 本地 33066 port 」接上 A-remote 3306 port //TODO:????待確認</p>
+<p>因此，專案裡的資料庫連線設定應該是以本地使用者連線， tunnel 才能成功打通。</p>
+<p>像是 laravel 的 .env 設定檔就會長這樣:</p>
+<pre><code>DB_BIJEN_HOST=127.0.0.1           # 以本地身份連結(這邊的本地同時代表「真實的本地」以及「中介伺服器的本地」)
+DB_BIJEN_PORT=33066               # 要用來連結的本地 port (這邊的本地意義同上)
+DB_BIJEN_DATABASE=database_BIJEN  # 欲連線的資料庫名稱
+DB_BIJEN_USERNAME=bijen           # 欲連線的資料庫登入資訊
+DB_BIJEN_PASSWORD=*******         # 欲連線的資料庫登入資訊
+</code></pre><h2 id="參考資料">參考資料</h2>
 <ul>
 <li><a href="https://jennycodes.me/posts/security-ssh">你該知道所有關於 SSH 的那些事</a></li>
 <li><a href="http://linux.vbird.org/linux_server/0310telnetssh.php">第十一章、遠端連線伺服器SSH / XDMCP / VNC / RDP</a></li>
+<li><a href="https://luohoufu.github.io/2016/07/21/deepin2/">利用 ssh 的用户配置文件 config 管理 ssh 会话</a>
+<ul>
+<li>PreferredAuthentications</li>
+</ul>
+</li>
+<li><a href="https://man.openbsd.org/ssh_config.5">OpenBSD manual page server SSH_CONFIG(5)</a>
+<ul>
+<li>各種 config 可以設定的項目</li>
+</ul>
+</li>
+</ul>
+<p><strong>KJ的筆記</strong></p>
+<ul>
+<li><a href="https://ubuntu-for-newbie.kejyun.com/docs/network/ssh/config/">Ubuntu 系統網路 ssh config 指令</a></li>
+<li><a href="https://ubuntu-for-newbie.kejyun.com/docs/network/ssh/ssh-tunnel-port-forward/">ssh tunnel 連線 port 轉發</a></li>
 </ul>
 <h2 id="延伸閱讀">延伸閱讀</h2>
 <ul>
 <li><a href="https://www.tecmint.com/create-ssh-tunneling-port-forwarding-in-linux/">How to Create SSH Tunneling or Port Forwarding in Linux</a></li>
 <li><a href="https://www.ssh.com/ssh/config/">SSH Config File</a></li>
+<li><a href="https://xenby.com/b/220-%E6%95%99%E5%AD%B8-%E7%94%A2%E7%94%9Fssh-key%E4%B8%A6%E4%B8%94%E9%80%8F%E9%81%8Ekey%E9%80%B2%E8%A1%8C%E5%85%8D%E5%AF%86%E7%A2%BC%E7%99%BB%E5%85%A5">[教學] 產生SSH Key並且透過KEY進行免密碼登入</a></li>
 </ul>
 
 
@@ -1041,6 +1299,57 @@
             
                 
                     
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
                     
                 
                 
@@ -1510,6 +1819,40 @@
                     
             
         
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
                     
             
         
@@ -1542,19 +1885,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1610247050"></script>
-    <script src="/js/perfect-scrollbar.min.js?1610247050"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1610247050"></script>
-    <script src="/js/jquery.sticky.js?1610247050"></script>
-    <script src="/js/featherlight.min.js?1610247050"></script>
-    <script src="/js/highlight.pack.js?1610247050"></script>
+    <script src="/js/clipboard.min.js?1624008690"></script>
+    <script src="/js/perfect-scrollbar.min.js?1624008690"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1624008690"></script>
+    <script src="/js/jquery.sticky.js?1624008690"></script>
+    <script src="/js/featherlight.min.js?1624008690"></script>
+    <script src="/js/highlight.pack.js?1624008690"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1610247050"></script>
-    <script src="/js/learn.js?1610247050"></script>
-    <script src="/js/hugo-learn.js?1610247050"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1624008690"></script>
+    <script src="/js/learn.js?1624008690"></script>
+    <script src="/js/hugo-learn.js?1624008690"></script>
     
         
-            <script src="/mermaid/mermaid.js?1610247050"></script>
+            <script src="/mermaid/mermaid.js?1624008690"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
