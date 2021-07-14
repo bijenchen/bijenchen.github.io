@@ -6,7 +6,74 @@
     <description>Recent content on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Jun 2021 16:28:08 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jul 2021 10:32:38 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20210714</title>
+      <link>https://bijenchen.github.io/work-journal/20210714/</link>
+      <pubDate>Wed, 14 Jul 2021 10:32:38 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210714/</guid>
+      <description>事件紀錄 關於專案的導轉邏輯 找對應的 port 與登入資訊 流程
+ local 瀏覽器輸入 testing 網址 testing 網址打 request 從 80 port 進到測試機 遇到 nginx/dev_proxy/docker-compose.yml 依照 nginx/dev_proxy/docker-compose.yml 導向 conf.d 裡的設定檔 nginx/dev_proxy/conf.d/testing-ttc-backend.company_name.co.conf 在這個 backend/testing/docker-compose.yml 檔案裡找到 container ttc_testing_nginx ，在 volumes 確定掛載資料夾是 /ttc/web/home/testing/ database 連線的資訊與 port 存在 /ttc/web/home/testing/www/ttc-backend/.env 裡面  從 DBeaver 設定連線進入遠掂資料庫 連到測試機 連到 AWC RDS 總結 1. 工作技能有沒有因此成長了？ write something here ~
+2. 計畫如何改善現況或者可以試著做得更好？ write something here ~
+3. 如何在這件事上提升效率？ write something here ~
+4. 有沒有把時間花在刀口上？ write something here ~</description>
+    </item>
+    
+    <item>
+      <title>20210701</title>
+      <link>https://bijenchen.github.io/work-journal/20210701/</link>
+      <pubDate>Thu, 01 Jul 2021 09:45:06 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210701/</guid>
+      <description>事件紀錄 (一)
+關於命名的注意事項
+ 相同概念不同類型的東西，命名時把差異字放在中間，要搜尋時比較容易精準  舉例：
+【後綴式命名】
+PRODUCT_TYPE_CODE_FRUIT PRODUCT_TYPE_CODE_TOY PRODUCT_TYPE_CODE_BOOK 搜尋時如果想找 PRODUCT_TYPE_CODE 系列的片段，會把所有產品種類的片段都標起來。
+如果想要找特定某一類產品，則需要搜尋到產品種類的第一碼例如「PRODUCT_TYPE_CODE_T」
+【穿插式命名】
+PRODUCT_TYPE_FRUIT_CODE PRODUCT_TYPE_TOY_CODE PRODUCT_TYPE_BOOK_CODE 搜尋時以「PRODUCT_TYPE_T」搜尋即可。
+筆記 兩種感覺差別不大，使用習慣的問題？
+function 命名時以動作為開頭，以成果為結尾，中間放能讓行為更具體的敘述：  e.g.
+ getEmployeeCollection()
+ 取員工資料集，回傳 Collection 物件。 setChartTitle() 設定圖表標題，不見得會回傳材料，可能只回傳「是否設定成功」而已。 mapEmployeeDepartmentArray() 建立員工與部門的對照表，回傳 Array
+  用來判斷的參數寫清楚是判斷什麼的   $is_already_login $is_paid
+ 有關聯的 function name 或變數之間要用一致的邏輯   getProductCollection() getExpiredProductCollection() getExpiredProductCollection() 會呼叫 getProductCollection() ，只是在呼叫時限縮範圍為已過期產品。
+ 總結 1. 工作技能有沒有因此成長了？ 好的命名能讓人真的用「閱讀意義」的方式去了解程式碼，對於維護會有很大的助益。
+2. 計畫如何改善現況或者可以試著做得更好？ 也許未來在開發專案時可以一邊收集紀錄專案內的命名邏輯範例，避免一時腦袋不清楚亂命名。
+3. 如何在這件事上提升效率？ 確立並內化一套命名規則。好處是可以減少命名上的遲疑時間，也能減少追溯變數源頭內容的時間。
+4. 有沒有把時間花在刀口上？ 命名邏輯的確立是有價值的投資。</description>
+    </item>
+    
+    <item>
+      <title>20210629</title>
+      <link>https://bijenchen.github.io/work-journal/20210629/</link>
+      <pubDate>Wed, 30 Jun 2021 00:05:33 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210629/</guid>
+      <description>事件紀錄 (一)
+雖然實際上是上週的事，但我至今還是很不服氣，於是補記。
+上週為了讓非開發人員的同仁也能在公司內部的測試機上面測試功能，於是協助設定 VPN 連線與 hosts 檔。
+合理想見，一定會遇到 windows 系統。所以我在開始幫同事們設定之前，先拿自己的筆電設定，以免遇到麻煩事耽誤對方時間。
+殊不知，最麻煩的就是我自己的筆電！！！！
+要在 windows 系統裡更新 hosts 檔，最直覺的方式是對著 hosts 檔按右鍵，選擇「以系統管理員身份開啟」，接著就萬事大吉了。
+按了右鍵如果找不到跟「系統管理員」相關的選項，也可以先用系統管理員身份開啟記事本，再開啟舊檔，選擇 hosts 檔案開啟。
+但討厭的是，微軟不知更新到哪一版後，似乎會鎖 Administrator 權限，就算編輯了 hosts 檔案也無法存進 /etc 資料夾，強制要人另存新檔。就算此時使用者顯示身份是系統管理員，也不是真的最高權限。
+遇到這種情況時，需要去把真正的 Administrator 權限打開：
+方法1. 在 電腦管理 &amp;gt; 本機使用者和群組 &amp;gt; 使用者 解除限制
+ 參考：https://www.fox-saying.com/blog/post/46022103
+ 方法2. 用進階啟動重啟電腦
+ 在微軟的「設定」裡以關鍵字「啟動」搜尋，可以找到「變更進階啟動選項」，選擇進階啟動裡的「立即重新啟動」按鈕，即可以安全模式進入Windows作業系統。(但是重啟的過程中只能靠通話&amp;amp;通靈進行遠端協助，希望盡可能不要走到這一步😢) 參考：https://kknews.cc/tech/pxav6le.html 走投無路被內容農場救一次，但可以選的話我還是不想看內容農場 XDD
+ 雖然折騰了一陣之後，我終於順利的修改了自己電腦的 hosts 檔案。但過不久發現了令人難過的真相，搞半天只有我的電腦這麼難纏，其他人都可以用系統管理員開記事本存檔&amp;hellip;&amp;hellip;
+可惡啊啊啊啊啊啊啊啊！！！我想著自己先嘗試難道是錯的嗎？不這麼謹慎反而不會遇到這麼讓人火大的問題，嘖！
+還是說這是天將降大任於吾身，所以簡單的「設定 hosts 檔」也要我去見識各種花招？
+別啊嗚嗚嗚嗚嗚嗚，我討厭微軟！
+沒想到用自己的 windows 電腦嘗試設定 hosts ，居然要千方百計才能拿到 Administrator 權限&amp;hellip;&amp;hellip;
+氣啊！！！！！
+ 血淚史 微軟官方文件一點幫助都沒有&amp;hellip;&amp;hellip; https://support.</description>
+    </item>
+    
     <item>
       <title>20210618</title>
       <link>https://bijenchen.github.io/work-journal/20210618/</link>
@@ -39,7 +106,7 @@ SELECT employee.id FROM employee Laravel Eloquent ORM 寫法
 (三)
 遵照 gitflow 從 dev 開分支，功能完成記得取最新的 dev 併進來測試， sourcetree 的 fetch 多按幾次，不要被陰了！併完要順便檢查 submodule 版本有沒有都吃對，通過測試才能發 PR 合回去 dev ，基本原則要做到變成膝反射，知不知道！
 (四)
-已知用 hugo Archetypes document
+已知用 hugo Archetypes document hugo new [archetypes_name]/[article_name].md
 總結 1. 工作技能有沒有因此成長了？ 差點沒有，已知的知識怎麼可以犯錯！
 還好還長了 hugo Archetypes 知識，略為欣慰。
 2. 計畫如何改善現況或者可以試著做得更好？ 1. 貼 code 過來把 namespace &amp;amp; use 刪乾淨，用套件重新引入。 2. sourcetree 的 fetch 給我多按幾次！  3. 如何在這件事上提升效率？ 把基本功訓練成膝跳反射！
@@ -191,7 +258,7 @@ config 內容寫法 Host [your-ssh-name / 未來使用ssh連線時的代稱，�
       
       <guid>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-hosting/</guid>
       <description>Hosting 是什麼 ? 網頁代管(Web Hosting)，將網頁程式碼放到外部可連結的伺服器上，讓他人可以透過網際網路訪問網站內容。
-案外案： 那 Hostname 又是什麼？ 在還沒有網際網路的時代，主機之間互相聯絡的方式就是自己製作一份主機的通訊錄(也就是常見的 /etc/hosts 那份檔案)，讓自己記得聯絡對象的 ip ，並且為該 ip 賦予一個我的主機認得的名字。 這個名字就稱為「Hostname」。
+案外案： 那 Hostname 又是什麼？ 在還沒有網際網路的時代，主機之間互相聯絡的方式就是自己製作一份主機的通訊錄(也就是常見的 /etc/hosts 那份檔案)，讓自己記得聯絡對象的 ip ，並且為該 ip 賦予一個我的主機認得的名字。 這個名字就稱為「 Hostname 」。
 當自己主機要向外聯絡時，會優先去查看通訊錄裡是不是已經認得這個 Hostname ， 不認得時才會向外去 DNS 詢問是否有對應 Domain Name 。
 因此可以做個實驗，在自己的 /etc/hosts 設定某個別的 ip 對應名稱為「www.google.com.tw」，設定完之後自己 ping 一下 www.google.com.tw 。 會發現回應的 ip 不再是 google 的主機 ip ，而是新設定的 ip ，對我自己的主機來說， www.google.com.tw 這個名字已經被別人取代，再也不會連到跟大家一樣的 google 首頁了。
  畢竟 DNS 系統是晚於通訊錄方式出現，算是在當時既有的模式之上進行擴充，所以通訊錄查詢會被優先使用也是合理現象。

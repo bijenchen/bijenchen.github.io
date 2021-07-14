@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>hosting :: 文科人的資訊筆記</title>
+    <title>20210701 :: 文科人的資訊筆記</title>
 
     
     <link href="/css/nucleus.css?1626259974" rel="stylesheet">
@@ -40,8 +40,16 @@
 </style>
 
 
+
+  <p class="publish-date" >發布日期：Jul 1, 2021</p>
+
+  
+      <p class="update-date">文章於 Jul 6, 2021 更新</p>
+  
+
+
   </head>
-  <body class="" data-url="/tags/hosting/">
+  <body class="" data-url="/work-journal/20210701/">
     <nav id="sidebar" class="">
 
 
@@ -91,8 +99,8 @@
   
     
     <li data-nav-id="/work-journal/" title="Work-journals" class="dd-item 
+        parent
         
-        active
         
         ">
       <a href="/work-journal/">
@@ -138,7 +146,7 @@
  
   
     
-      <li data-nav-id="/work-journal/20210701/" title="20210701" class="dd-item ">
+      <li data-nav-id="/work-journal/20210701/" title="20210701" class="dd-item active">
         <a href="/work-journal/20210701/">
         <b>[工作日誌] </b>20210701
         
@@ -231,7 +239,7 @@
     
     <li data-nav-id="/posts/" title="Posts" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/posts/">
@@ -1107,7 +1115,7 @@
             
           
           
-            <a href='/'>文科人的資訊筆記</a> > <a href='/tags/'>Tags</a> > hosting
+            <a href='/'>文科人的資訊筆記</a> > <a href='/work-journal/'>Work-journals</a> > 20210701
           
         
           
@@ -1120,7 +1128,24 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#事件紀錄">事件紀錄</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#總結">總結</a>
+      <ul>
+        <li><a href="#1-工作技能有沒有因此成長了">1. 工作技能有沒有因此成長了？</a></li>
+        <li><a href="#2-計畫如何改善現況或者可以試著做得更好">2. 計畫如何改善現況或者可以試著做得更好？</a></li>
+        <li><a href="#3-如何在這件事上提升效率">3. 如何在這件事上提升效率？</a></li>
+        <li><a href="#4-有沒有把時間花在刀口上">4. 有沒有把時間花在刀口上？</a></li>
+      </ul>
+    </li>
+    <li><a href="#關鍵字">關鍵字</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1130,32 +1155,90 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/work-journal">Work Journal</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                tag ::
-              
-              hosting
+              20210701
             </h1>
           
 
         
 
 
-
-
-
+<h2 id="事件紀錄">事件紀錄</h2>
+<p>(一)</p>
+<p>關於命名的注意事項</p>
+<ol>
+<li>相同概念不同類型的東西，命名時把差異字放在中間，要搜尋時比較容易精準</li>
+</ol>
+<p>舉例：</p>
+<p>【後綴式命名】</p>
+<pre><code>PRODUCT_TYPE_CODE_FRUIT
+PRODUCT_TYPE_CODE_TOY
+PRODUCT_TYPE_CODE_BOOK
+</code></pre><p>搜尋時如果想找 PRODUCT_TYPE_CODE 系列的片段，會把所有產品種類的片段都標起來。</p>
+<p>如果想要找特定某一類產品，則需要搜尋到產品種類的第一碼例如「PRODUCT_TYPE_CODE_T」</p>
+<p>【穿插式命名】</p>
+<pre><code>PRODUCT_TYPE_FRUIT_CODE
+PRODUCT_TYPE_TOY_CODE
+PRODUCT_TYPE_BOOK_CODE
+</code></pre><p>搜尋時以「PRODUCT_TYPE_T」搜尋即可。</p>
+<h5 id="筆記">筆記</h5>
+<p>兩種感覺差別不大，使用習慣的問題？</p>
+<ol start="2">
+<li>function 命名時以動作為開頭，以成果為結尾，中間放能讓行為更具體的敘述：</li>
+</ol>
+<p>e.g.</p>
+<blockquote>
+<p>getEmployeeCollection()</p>
+<blockquote>
+<p>取員工資料集，回傳 Collection 物件。
+setChartTitle()
+設定圖表標題，不見得會回傳材料，可能只回傳「是否設定成功」而已。
+mapEmployeeDepartmentArray()
+建立員工與部門的對照表，回傳 Array</p>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li>用來判斷的參數寫清楚是判斷什麼的</li>
+</ol>
+<blockquote>
+<p>$is_already_login
+$is_paid</p>
+</blockquote>
+<ol start="4">
+<li>有關聯的 function name 或變數之間要用一致的邏輯</li>
+</ol>
+<blockquote>
+<p>getProductCollection()
+getExpiredProductCollection()
+getExpiredProductCollection() 會呼叫 getProductCollection() ，只是在呼叫時限縮範圍為已過期產品。</p>
+</blockquote>
+<h2 id="總結">總結</h2>
+<h3 id="1-工作技能有沒有因此成長了">1. 工作技能有沒有因此成長了？</h3>
+<p>好的命名能讓人真的用「閱讀意義」的方式去了解程式碼，對於維護會有很大的助益。</p>
+<h3 id="2-計畫如何改善現況或者可以試著做得更好">2. 計畫如何改善現況或者可以試著做得更好？</h3>
+<p>也許未來在開發專案時可以一邊收集紀錄專案內的命名邏輯範例，避免一時腦袋不清楚亂命名。</p>
+<h3 id="3-如何在這件事上提升效率">3. 如何在這件事上提升效率？</h3>
+<p>確立並內化一套命名規則。好處是可以減少命名上的遲疑時間，也能減少追溯變數源頭內容的時間。</p>
+<h3 id="4-有沒有把時間花在刀口上">4. 有沒有把時間花在刀口上？</h3>
+<p>命名邏輯的確立是有價值的投資。</p>
+<h2 id="關鍵字">關鍵字</h2>
 <ul>
-	
-		<li><a href="/posts/roadmap-developer/backend/internet/what-is-hosting/">What Is Hosting</a></li>
-	
+<li>命名</li>
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -1190,8 +1273,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1205,6 +1286,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1222,6 +1306,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1237,6 +1322,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1804,8 +1892,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/work-journal/20210714/" title="20210714"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/work-journal/" title="Work-journals" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/work-journal/20210629/" title="20210629" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1837,3 +1927,4 @@
 
   </body>
 </html>
+

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>hosting :: 文科人的資訊筆記</title>
+    <title>20210629 :: 文科人的資訊筆記</title>
 
     
     <link href="/css/nucleus.css?1626259974" rel="stylesheet">
@@ -40,8 +40,16 @@
 </style>
 
 
+
+  <p class="publish-date" >發布日期：Jun 30, 2021</p>
+
+  
+      <p class="update-date">文章於 Jun 30, 2021 更新</p>
+  
+
+
   </head>
-  <body class="" data-url="/tags/hosting/">
+  <body class="" data-url="/work-journal/20210629/">
     <nav id="sidebar" class="">
 
 
@@ -91,8 +99,8 @@
   
     
     <li data-nav-id="/work-journal/" title="Work-journals" class="dd-item 
+        parent
         
-        active
         
         ">
       <a href="/work-journal/">
@@ -159,7 +167,7 @@
  
   
     
-      <li data-nav-id="/work-journal/20210629/" title="20210629" class="dd-item ">
+      <li data-nav-id="/work-journal/20210629/" title="20210629" class="dd-item active">
         <a href="/work-journal/20210629/">
         <b>[工作日誌] </b>20210629
         
@@ -231,7 +239,7 @@
     
     <li data-nav-id="/posts/" title="Posts" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/posts/">
@@ -1107,7 +1115,7 @@
             
           
           
-            <a href='/'>文科人的資訊筆記</a> > <a href='/tags/'>Tags</a> > hosting
+            <a href='/'>文科人的資訊筆記</a> > <a href='/work-journal/'>Work-journals</a> > 20210629
           
         
           
@@ -1120,7 +1128,20 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#事件紀錄">事件紀錄</a></li>
+    <li><a href="#總結">總結</a>
+      <ul>
+        <li><a href="#1-工作技能有沒有因此成長了">1. 工作技能有沒有因此成長了？</a></li>
+        <li><a href="#2-計畫如何改善現況或者可以試著做得更好">2. 計畫如何改善現況或者可以試著做得更好？</a></li>
+        <li><a href="#3-如何在這件事上提升效率">3. 如何在這件事上提升效率？</a></li>
+        <li><a href="#4-有沒有把時間花在刀口上">4. 有沒有把時間花在刀口上？</a></li>
+      </ul>
+    </li>
+    <li><a href="#關鍵字">關鍵字</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1130,32 +1151,90 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/work-journal">Work Journal</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                tag ::
-              
-              hosting
+              20210629
             </h1>
           
 
         
 
 
-
-
-
+<h2 id="事件紀錄">事件紀錄</h2>
+<p>(一)</p>
+<p>雖然實際上是上週的事，但我至今還是很不服氣，於是補記。</p>
+<p>上週為了讓非開發人員的同仁也能在公司內部的測試機上面測試功能，於是協助設定 VPN 連線與 hosts 檔。</p>
+<p>合理想見，一定會遇到 windows 系統。所以我在開始幫同事們設定之前，先拿自己的筆電設定，以免遇到麻煩事耽誤對方時間。</p>
+<p>殊不知，最麻煩的就是我自己的筆電！！！！</p>
+<p>要在 windows 系統裡更新 hosts 檔，最直覺的方式是對著 hosts 檔按右鍵，選擇「以系統管理員身份開啟」，接著就萬事大吉了。</p>
+<p>按了右鍵如果找不到跟「系統管理員」相關的選項，也可以先用系統管理員身份開啟記事本，再開啟舊檔，選擇 hosts 檔案開啟。</p>
+<p>但討厭的是，微軟不知更新到哪一版後，似乎會鎖 Administrator 權限，就算編輯了 hosts 檔案也無法存進 /etc 資料夾，強制要人另存新檔。就算此時使用者顯示身份是系統管理員，也不是真的最高權限。</p>
+<p>遇到這種情況時，需要去把真正的 Administrator 權限打開：</p>
+<p>方法1. 在 電腦管理 &gt; 本機使用者和群組 &gt; 使用者 解除限制</p>
+<blockquote>
+<p>參考：https://www.fox-saying.com/blog/post/46022103</p>
+</blockquote>
+<p>方法2. 用進階啟動重啟電腦</p>
+<blockquote>
+<p>在微軟的「設定」裡以關鍵字「啟動」搜尋，可以找到「變更進階啟動選項」，選擇進階啟動裡的「立即重新啟動」按鈕，即可以安全模式進入Windows作業系統。(但是重啟的過程中只能靠通話&amp;通靈進行遠端協助，希望盡可能不要走到這一步😢)
+參考：https://kknews.cc/tech/pxav6le.html
+走投無路被內容農場救一次，但可以選的話我還是不想看內容農場 XDD</p>
+</blockquote>
+<p>雖然折騰了一陣之後，我終於順利的修改了自己電腦的 hosts 檔案。但過不久發現了令人難過的真相，搞半天只有我的電腦這麼難纏，其他人都可以用系統管理員開記事本存檔&hellip;&hellip;</p>
+<p>可惡啊啊啊啊啊啊啊啊！！！我想著自己先嘗試難道是錯的嗎？不這麼謹慎反而不會遇到這麼讓人火大的問題，嘖！</p>
+<p>還是說這是天將降大任於吾身，所以簡單的「設定 hosts 檔」也要我去見識各種花招？</p>
+<p>別啊嗚嗚嗚嗚嗚嗚，我討厭微軟！</p>
+<p>沒想到用自己的 windows 電腦嘗試設定 hosts ，居然要千方百計才能拿到 Administrator 權限&hellip;&hellip;</p>
+<p>氣啊！！！！！</p>
+<blockquote>
+<p>血淚史
+微軟官方文件一點幫助都沒有&hellip;&hellip; <a href="https://support.microsoft.com/zh-tw/windows/%E5%A6%82%E4%BD%95%E4%BB%A5%E7%B3%BB%E7%B5%B1%E7%AE%A1%E7%90%86%E5%93%A1%E8%BA%AB%E5%88%86%E7%99%BB%E5%85%A5-63267a09-9926-991a-1c77-d203160c8563">https://support.microsoft.com/zh-tw/windows/%E5%A6%82%E4%BD%95%E4%BB%A5%E7%B3%BB%E7%B5%B1%E7%AE%A1%E7%90%86%E5%93%A1%E8%BA%AB%E5%88%86%E7%99%BB%E5%85%A5-63267a09-9926-991a-1c77-d203160c8563</a>
+這位看來也是個被微軟叢康的可憐人，可惜他的解法幫不上我 <a href="https://www.albert-yu.com/blog/windows-10-%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F-hosts-%E8%A8%AD%E5%AE%9A%E5%9C%96%E6%96%87%E6%95%99%E5%AD%B8/">https://www.albert-yu.com/blog/windows-10-%E4%BF%AE%E6%94%B9%E7%B3%BB%E7%BB%9F-hosts-%E8%A8%AD%E5%AE%9A%E5%9C%96%E6%96%87%E6%95%99%E5%AD%B8/</a>
+暴雪說得簡單，看看別人都這麼簡單！！！Q口Q <a href="https://tw.battle.net/support/zh/article/31364">https://tw.battle.net/support/zh/article/31364</a>
+Mac 改 Hosts 的方法，如果同事們都能直接丟網路上的教學，跟著照做就好，一定很幸福 XD
+<a href="https://briian.com/6148/">https://briian.com/6148/</a>
+<a href="https://blog.gtwang.org/windows/windows-linux-hosts-file-configuration/">https://blog.gtwang.org/windows/windows-linux-hosts-file-configuration/</a></p>
+</blockquote>
+<p>(二)</p>
+<p>經過了上面的折騰，這幾天出什麼阿雜事我都能心平氣和面對了。</p>
+<p>舉凡連開發機連到一半斷線(又沒有閒置，幾秒前才跑過測試指令，下一秒說斷就斷)、SFTP 同步要好幾秒(同一個指令前幾秒執行成功，下一秒跟你說找不到檔案，檔案內容不異動重新存檔後指令又是一條好漢，洗勒嘎哇公僧糗？)，我已經能微笑對著行動網路說「你這個小淘氣」了。幹嘛歧視用行動網路開發的人？ Q_Q</p>
+<p>我覺得 Work From Home 期間，公司如果沒有補貼設備，真的不能苛責員工效率變低！</p>
+<p>我想念公司飛速的網路～～還有能讓我坐姿盡量端正的辦公桌椅，感覺我的腰在 WFH 期間快坐壞了 Q口Q</p>
+<p>要不是房間沒空間，我說不定在 WFM 開始第二週，就把人體工學椅敗下去了。坐姿真的會影響辦公煩躁感 XD</p>
+<p>(三)</p>
+<p>記些名詞之後慢慢長知識</p>
+<p><a href="https://www.w3schools.com/sql/sql_constraints.asp">SQL Constraints</a></p>
+<p>auto commit</p>
+<p>(四)</p>
+<p>laravel 的日期驗證規則有「 after:date 」和「 after_or_equal:date 」可用。</p>
+<p><a href="https://laravel.com/docs/8.x/validation#rule-after-or-equal">文件參考</a></p>
+<h2 id="總結">總結</h2>
+<h3 id="1-工作技能有沒有因此成長了">1. 工作技能有沒有因此成長了？</h3>
+<p>血淚教訓，應該算有。</p>
+<p>至少以後遇到跟我筆電一樣難纏的電腦，還有招可用。</p>
+<h3 id="2-計畫如何改善現況或者可以試著做得更好">2. 計畫如何改善現況或者可以試著做得更好？</h3>
+<p>不要用微軟開發！(誤？無誤？XD)</p>
+<h3 id="3-如何在這件事上提升效率">3. 如何在這件事上提升效率？</h3>
+<p>同上。</p>
+<h3 id="4-有沒有把時間花在刀口上">4. 有沒有把時間花在刀口上？</h3>
+<p>大概有？</p>
+<h2 id="關鍵字">關鍵字</h2>
 <ul>
-	
-		<li><a href="/posts/roadmap-developer/backend/internet/what-is-hosting/">What Is Hosting</a></li>
-	
+<li>hosts</li>
 </ul>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -1190,8 +1269,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1205,6 +1282,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1238,6 +1318,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1253,6 +1334,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1804,8 +1888,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/work-journal/20210701/" title="20210701"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/work-journal/" title="Work-journals" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/work-journal/20210618/" title="20210618" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1837,3 +1923,4 @@
 
   </body>
 </html>
+

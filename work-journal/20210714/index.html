@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>hosting :: 文科人的資訊筆記</title>
+    <title>20210714 :: 文科人的資訊筆記</title>
 
     
     <link href="/css/nucleus.css?1626259974" rel="stylesheet">
@@ -40,8 +40,16 @@
 </style>
 
 
+
+  <p class="publish-date" >發布日期：Jul 14, 2021</p>
+
+  
+      <p class="update-date">文章於 Jul 14, 2021 更新</p>
+  
+
+
   </head>
-  <body class="" data-url="/tags/hosting/">
+  <body class="" data-url="/work-journal/20210714/">
     <nav id="sidebar" class="">
 
 
@@ -91,8 +99,8 @@
   
     
     <li data-nav-id="/work-journal/" title="Work-journals" class="dd-item 
+        parent
         
-        active
         
         ">
       <a href="/work-journal/">
@@ -117,7 +125,7 @@
  
   
     
-      <li data-nav-id="/work-journal/20210714/" title="20210714" class="dd-item ">
+      <li data-nav-id="/work-journal/20210714/" title="20210714" class="dd-item active">
         <a href="/work-journal/20210714/">
         <b>[工作日誌] </b>20210714
         
@@ -231,7 +239,7 @@
     
     <li data-nav-id="/posts/" title="Posts" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/posts/">
@@ -1107,7 +1115,7 @@
             
           
           
-            <a href='/'>文科人的資訊筆記</a> > <a href='/tags/'>Tags</a> > hosting
+            <a href='/'>文科人的資訊筆記</a> > <a href='/work-journal/'>Work-journals</a> > 20210714
           
         
           
@@ -1120,7 +1128,26 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#事件紀錄">事件紀錄</a>
+      <ul>
+        <li><a href="#關於專案的導轉邏輯">關於專案的導轉邏輯</a></li>
+        <li><a href="#從-dbeaver-設定連線進入遠掂資料庫">從 DBeaver 設定連線進入遠掂資料庫</a></li>
+      </ul>
+    </li>
+    <li><a href="#總結">總結</a>
+      <ul>
+        <li><a href="#1-工作技能有沒有因此成長了">1. 工作技能有沒有因此成長了？</a></li>
+        <li><a href="#2-計畫如何改善現況或者可以試著做得更好">2. 計畫如何改善現況或者可以試著做得更好？</a></li>
+        <li><a href="#3-如何在這件事上提升效率">3. 如何在這件事上提升效率？</a></li>
+        <li><a href="#4-有沒有把時間花在刀口上">4. 有沒有把時間花在刀口上？</a></li>
+      </ul>
+    </li>
+    <li><a href="#關鍵字">關鍵字</a></li>
+    <li><a href="#後記">後記</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -1130,32 +1157,63 @@
             
         <div id="head-tags">
         
+<div class="tags">
+
+  <a class="tag-link" href="/tags/work-journal">Work Journal</a>
+
+</div>
+
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-                tag ::
-              
-              hosting
+              20210714
             </h1>
           
 
         
 
 
-
-
-
+<h2 id="事件紀錄">事件紀錄</h2>
+<h3 id="關於專案的導轉邏輯">關於專案的導轉邏輯</h3>
+<h4 id="找對應的-port-與登入資訊">找對應的 port 與登入資訊</h4>
+<p>流程</p>
+<ol>
+<li>local 瀏覽器輸入 testing 網址</li>
+<li>testing 網址打 request 從  80 port 進到測試機</li>
+<li>遇到 <code>nginx/dev_proxy/docker-compose.yml</code></li>
+<li>依照 <code>nginx/dev_proxy/docker-compose.yml</code> 導向 conf.d 裡的設定檔 <code>nginx/dev_proxy/conf.d/testing-ttc-backend.company_name.co.conf</code></li>
+<li>在這個 <code>backend/testing/docker-compose.yml</code> 檔案裡找到 container <code>ttc_testing_nginx</code> ，在 volumes 確定掛載資料夾是 /ttc/web/home/testing/</li>
+<li>database 連線的資訊與 port 存在 <code>/ttc/web/home/testing/www/ttc-backend/.env</code> 裡面</li>
+</ol>
+<h3 id="從-dbeaver-設定連線進入遠掂資料庫">從 DBeaver 設定連線進入遠掂資料庫</h3>
+<h4 id="連到測試機">連到測試機</h4>
+<p><img src="static/work-journal/20210714/work-journal_20210714_testing_01_dbeaver_main.png" alt="">
+<img src="static/work-journal/20210714/work-journal_20210714_testing_02_dbeaver_ssh.png" alt=""></p>
+<h4 id="連到-awc-rds">連到 AWC RDS</h4>
+<p><img src="static/work-journal/20210714/work-journal_20210714_RDS_01_dbeaver_main.png" alt="">
+<img src="static/work-journal/20210714/work-journal_20210714_RDS_02_dbeaver_ssh.png" alt=""></p>
+<h2 id="總結">總結</h2>
+<h3 id="1-工作技能有沒有因此成長了">1. 工作技能有沒有因此成長了？</h3>
+<p>write something here ~</p>
+<h3 id="2-計畫如何改善現況或者可以試著做得更好">2. 計畫如何改善現況或者可以試著做得更好？</h3>
+<p>write something here ~</p>
+<h3 id="3-如何在這件事上提升效率">3. 如何在這件事上提升效率？</h3>
+<p>write something here ~</p>
+<h3 id="4-有沒有把時間花在刀口上">4. 有沒有把時間花在刀口上？</h3>
+<p>write something here ~</p>
+<h2 id="關鍵字">關鍵字</h2>
 <ul>
-	
-		<li><a href="/posts/roadmap-developer/backend/internet/what-is-hosting/">What Is Hosting</a></li>
-	
+<li>xxx</li>
 </ul>
+<h2 id="後記">後記</h2>
+<p>可惡，被快速硬塞資訊真的很討厭&hellip;&hellip;<br>
+現在的我明知應該快速掌握並熟練這邊的主機與服務的關係，但是身體在抗拒，連筆記都不想好好整理，好噁心好想吐 😢</p>
 
 
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -1190,8 +1248,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1205,6 +1261,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1221,6 +1278,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1804,8 +1864,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/work-journal/" title="Work-journals"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/work-journal/" title="Work-journals" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/work-journal/20210701/" title="20210701" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1837,3 +1899,4 @@
 
   </body>
 </html>
+
