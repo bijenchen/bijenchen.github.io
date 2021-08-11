@@ -6,7 +6,47 @@
     <description>Recent content on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jul 2021 10:32:38 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Aug 2021 11:44:56 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Hugo 文章裡顯示圖片</title>
+      <link>https://bijenchen.github.io/posts/2021/08/hugo_insert-images/</link>
+      <pubDate>Wed, 11 Aug 2021 11:44:56 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2021/08/hugo_insert-images/</guid>
+      <description>基本語法 ![name](image_file_path.Extension) 如果是本地圖片 step 1 : 將圖片放在 static 目錄下 例如我的目錄結構是這樣， static 裡面分門別類，其中一個目錄是 images
+static | |-- images |-- picture_01.jpg |-- picture_02.png |__ picture_03.png |-- ... |__ ... step 2 : 在文章內引入 在文章內輸入如下內容，即可引入 picture_01.jpg ，命名可省略。
+![](/images/picture_01.jpg) 如果是線上圖片 上傳到雲端圖庫後，直接貼上分享網址即可，別忘記副檔名。
+![](http://[somewhere].com/picture_01.jpg) 參考資料  官方文件 : 框架結構  文件有說圖片要放在 static/ 目錄下。   官方文件 : 本地端存放圖片的地方  引入圖片的寫法跟一般 Markdown 語法相同，就是 ![Example image](/image.png) 而已，但是路徑不用包含 static/ 目錄，因為框架行為就是進 static/ 目錄尋找。   Day 24. Hugo Shortcode 運用場景 - 圖片篇  Shortcodes 語法中文教學，包含調整大小   How To Add Image Processing to Your Hugo Website and Improve Performance  好像可以改預設尋找的資料夾，但尚未嘗試   Hugo: How can I display an image in my post list  使用 Shortcodes 語法，達成在文章列表顯示圖片的目的，但尚未嘗試    </description>
+    </item>
+    
+    <item>
+      <title>20210722</title>
+      <link>https://bijenchen.github.io/work-journal/20210722/</link>
+      <pubDate>Thu, 22 Jul 2021 17:06:54 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210722/</guid>
+      <description>事件紀錄 (一)
+SQL 下 DISTINCT 效率很差(資料待補)，盡可能避免！
+因為 DISTINCT 的行為是會逐筆看資料，將之分類成有取過與沒取過，
+分類後得到的結果並不會包含原資料表的索引，就無法利用到索引帶來的效率。
+相同的狀況也會出現在使用 subquery 的情境，哎租椅！
+(二)
+關於 phpunit
+  function 紀錄
+a. 檢查 array 格式的資料是否有指定的 key
+assertArrayHasKey()
+b. 檢查 項目內容是否相等
+assertEquals()
+其他可用 function 詳見套件說明
+別人的使用經驗：Laravel – Unit Test 單元測試教學
+  執行方式
+a. 跑 class 裡全部的 method
+[path of phpunit] [path of test file]
+./vendor/bin/phpunit ./tests/Api/v1/yourTest.php
+b. 跑 class 裡指定的 method
+[path of phpunit] --filter [method name] [path of test file]</description>
+    </item>
+    
     <item>
       <title>20210714</title>
       <link>https://bijenchen.github.io/work-journal/20210714/</link>
@@ -330,10 +370,10 @@ Browser Engine 負責拿 Rendering Engine 給的資料和 Storage 的內容去�
     
     <item>
       <title>Change Custom Style</title>
-      <link>https://bijenchen.github.io/posts/2020/10/change-custom-style/</link>
+      <link>https://bijenchen.github.io/posts/2020/10/hugo_change-custom-style/</link>
       <pubDate>Sun, 18 Oct 2020 22:48:56 +0800</pubDate>
       
-      <guid>https://bijenchen.github.io/posts/2020/10/change-custom-style/</guid>
+      <guid>https://bijenchen.github.io/posts/2020/10/hugo_change-custom-style/</guid>
       <description>目標 想要在每篇文章顯示最後更新時間，最好能自動吃存檔時間。
 過程紀錄  閱讀 Learn Theme for Hugo 教學文件的 Style customization 章節，知道了套用主題時，應該在跟 content 同層級的 layouts 放樣板html，如果想要加入自訂 header ，應該在 layouts/partials/ 增加一個名為 custom-header.html 的檔案， Learn Theme 的 header.html 會去吃 custom-header.html 增加到主題的 header 中。 閱讀 hugo 官方文件的 front-matte 章節，發現有 last modified 的參數可用 lastmod 。  在 hugo 官網搜尋「lastmod」關鍵字，找到 .Lastmod function 的說明，發現 lastmod 可以吃 git 資訊，但是要設定 config 。 config 詳細的設定也附上了連結「front matter configuration for dates」。   原本不知道如何寫 custom-header ，但是因為 google 搜尋 hogo LastMod 參數時，找到這篇，看起來應該可以直接用，所以把 lastmod 的 html code 丟進去我自己的 custom-header.</description>
     </item>
@@ -351,10 +391,10 @@ Browser Engine 負責拿 Rendering Engine 給的資料和 Storage 的內容去�
     
     <item>
       <title>關於：用 hugo 搭配 github page 打造一個自己的部落格</title>
-      <link>https://bijenchen.github.io/posts/2020/10/setting-github-page-with-hugo-murmur/</link>
+      <link>https://bijenchen.github.io/posts/2020/10/hugo_setting-github-page-with-hugo-murmur/</link>
       <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
       
-      <guid>https://bijenchen.github.io/posts/2020/10/setting-github-page-with-hugo-murmur/</guid>
+      <guid>https://bijenchen.github.io/posts/2020/10/hugo_setting-github-page-with-hugo-murmur/</guid>
       <description>緣起 碰壁紀錄 節外生枝 後記 參考資料  緣起 做這件事的初衷其實是我想要把 github 當學習紀錄來用，順便讓自己熟悉 git 的使用。 雖然可以單純把每篇筆記做成 .md 檔案放到 github 裡，但是在檢視上似乎又不是非常方便，用手機看 github 時情感上覺得不太順眼，所以想要用 github.io 建立一個靜態網站當作部落格使用。
 再來，由於對調校前端畫面沒什麼興趣，想要找現成的畫面模板套不同的文章內容，讓維護部落格這件事情可以最單純化，所以搜尋「 github blog 」看看大家都是怎麼做。找到這篇和這篇，得到了看起來派得上用場的三個新名詞「 Jekyll 」、「 hexo 」和「 hugo 」，丟去 google 搜尋後大致知道這三個都是「靜態網站生成器」，主要的功能是提供模板與網頁生成引擎(參考的是這篇)，讓我們可以在不必研究網頁要如何長出來的情況下運作一個靜態網站。
 (但是我的直覺告訴我：「網頁生成引擎如何運作」這個知識對後端工程師來說逃得了一時、逃不了一世。嗯&amp;hellip;&amp;hellip;希望未來的自己來打臉現在的我？ XD )
@@ -365,10 +405,10 @@ Browser Engine 負責拿 Rendering Engine 給的資料和 Storage 的內容去�
     
     <item>
       <title>用 hugo 搭配 github page 打造一個自己的部落格</title>
-      <link>https://bijenchen.github.io/posts/2020/10/setting-github-page-with-hugo/</link>
+      <link>https://bijenchen.github.io/posts/2020/10/hugo_setting-github-page-with-hugo/</link>
       <pubDate>Fri, 02 Oct 2020 14:26:05 +0800</pubDate>
       
-      <guid>https://bijenchen.github.io/posts/2020/10/setting-github-page-with-hugo/</guid>
+      <guid>https://bijenchen.github.io/posts/2020/10/hugo_setting-github-page-with-hugo/</guid>
       <description>目標 前置作業 執行步驟  使用 hugo 產生靜態網頁  1. 安裝 hugo 2. 安裝完之後可以確認一下是否成功安裝。 3. 成功安裝後，產生 hugo 架構的網頁專案檔案。 4. 將整個專案加入 git 版本控制 5. 安裝主題 6. 增加一篇文章 7. 在本地預覽網站(含草稿)   建立 Repository  1. 建立自己的 github.io Repository 2. 建立自己 hugo site 的 Repository   發布至 github.io  1. 確認想發布的文章已經完稿(已非草稿狀態) 2. 在 hugo site 專案資料夾中產生一個 public 資料夾， public 資料夾要引用自己的 github.io 的專案內容 3. 將 hugo site 裡編輯過的內容轉成網頁內容 4. 將產生的 public 的內容推上 github.</description>
     </item>
     

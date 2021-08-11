@@ -6,7 +6,35 @@
     <description>Recent content in Work-journals on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Jul 2021 10:32:38 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/work-journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 17:06:54 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/work-journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20210722</title>
+      <link>https://bijenchen.github.io/work-journal/20210722/</link>
+      <pubDate>Thu, 22 Jul 2021 17:06:54 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210722/</guid>
+      <description>事件紀錄 (一)
+SQL 下 DISTINCT 效率很差(資料待補)，盡可能避免！
+因為 DISTINCT 的行為是會逐筆看資料，將之分類成有取過與沒取過，
+分類後得到的結果並不會包含原資料表的索引，就無法利用到索引帶來的效率。
+相同的狀況也會出現在使用 subquery 的情境，哎租椅！
+(二)
+關於 phpunit
+  function 紀錄
+a. 檢查 array 格式的資料是否有指定的 key
+assertArrayHasKey()
+b. 檢查 項目內容是否相等
+assertEquals()
+其他可用 function 詳見套件說明
+別人的使用經驗：Laravel – Unit Test 單元測試教學
+  執行方式
+a. 跑 class 裡全部的 method
+[path of phpunit] [path of test file]
+./vendor/bin/phpunit ./tests/Api/v1/yourTest.php
+b. 跑 class 裡指定的 method
+[path of phpunit] --filter [method name] [path of test file]</description>
+    </item>
+    
     <item>
       <title>20210714</title>
       <link>https://bijenchen.github.io/work-journal/20210714/</link>
