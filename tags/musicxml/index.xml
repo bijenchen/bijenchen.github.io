@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>musicxml on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/musicxml/</link>
+    <description>Recent content in musicxml on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jan 2022 11:24:00 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/musicxml/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Musicxml 格式初步理解</title>
+      <link>https://bijenchen.github.io/posts/2022/01/basic_about_musicxml/</link>
+      <pubDate>Mon, 03 Jan 2022 11:24:00 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2022/01/basic_about_musicxml/</guid>
+      <description>摘要：
+ musicxml 是一種 xml 格式的延伸，主要作用是以人眼可讀、同時網頁可辨識的約定格式來標示譜面資訊 雖然如上宣稱，但因為實際的譜面資訊多，約定格式組合之後不易讀，所以還是需要依靠軟體轉換為五線譜或其他常用譜面 好處是能夠用文字文本的形式儲存音樂，相較於 MIDI 格式，能保留較齊全的演奏指示  疑問：
+ 似乎要跟 Lilypond 所採用 ABC記譜法(ABC notion) 取得平衡點，盡可能用簡潔文字紀錄可以跨平台呈現的譜面？  我的需求：
+ 用文本儲存音樂資訊，可任意轉換為五線譜與簡譜  用文本儲存音樂資訊，可任意轉換為五線譜  musicxml + musescore 已可達成雙向轉換的功能   用文本儲存音樂資訊，可任意轉換為簡譜  TODO      參考資料  Wiki:ABC記譜法 Wiki:MusicXML 一個中音 C 在 MusicXML 要這樣記才行(C大調，G譜號，4/4拍，包含一個中央C全音符)  &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE score-partwise PUBLIC &amp;quot;-//Recordare//DTD MusicXML 3.1 Partwise//EN&amp;quot; &amp;quot;http://www.musicxml.org/dtds/partwise.dtd&amp;quot;&amp;gt; &amp;lt;score-partwise version=&amp;quot;3.1&amp;quot;&amp;gt; &amp;lt;part-list&amp;gt; &amp;lt;score-part id=&amp;quot;P1&amp;quot;&amp;gt; &amp;lt;part-name&amp;gt;Music&amp;lt;/part-name&amp;gt; &amp;lt;/score-part&amp;gt; &amp;lt;/part-list&amp;gt; &amp;lt;part id=&amp;quot;P1&amp;quot;&amp;gt; &amp;lt;measure number=&amp;quot;1&amp;quot;&amp;gt; &amp;lt;attributes&amp;gt; &amp;lt;divisions&amp;gt;1&amp;lt;/divisions&amp;gt; &amp;lt;key&amp;gt; &amp;lt;fifths&amp;gt;0&amp;lt;/fifths&amp;gt; &amp;lt;/key&amp;gt; &amp;lt;time&amp;gt; &amp;lt;beats&amp;gt;4&amp;lt;/beats&amp;gt; &amp;lt;beat-type&amp;gt;4&amp;lt;/beat-type&amp;gt; &amp;lt;/time&amp;gt; &amp;lt;clef&amp;gt; &amp;lt;sign&amp;gt;G&amp;lt;/sign&amp;gt; &amp;lt;line&amp;gt;2&amp;lt;/line&amp;gt; &amp;lt;/clef&amp;gt; &amp;lt;/attributes&amp;gt; &amp;lt;note&amp;gt; &amp;lt;pitch&amp;gt; &amp;lt;step&amp;gt;C&amp;lt;/step&amp;gt; &amp;lt;octave&amp;gt;4&amp;lt;/octave&amp;gt; &amp;lt;/pitch&amp;gt; &amp;lt;duration&amp;gt;4&amp;lt;/duration&amp;gt; &amp;lt;type&amp;gt;whole&amp;lt;/type&amp;gt; &amp;lt;/note&amp;gt; &amp;lt;/measure&amp;gt; &amp;lt;/part&amp;gt; &amp;lt;/score-partwise&amp;gt;  Magenta魔改记-2：数据格式与数据集  解說 MusicXML 格式   了解MusicXML  詳細說明了 MusicXML 的背景觀念   宅學習: MusicXML w3c 的musicxml文件  </description>
+    </item>
+    
+  </channel>
+</rss>

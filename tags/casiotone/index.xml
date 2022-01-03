@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>casiotone on 文科人的資訊筆記</title>
+    <link>https://bijenchen.github.io/tags/casiotone/</link>
+    <description>Recent content in casiotone on 文科人的資訊筆記</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Jan 2022 12:06:21 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/casiotone/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何將 MIDI 鍵盤連接至 Musescore2 軟體</title>
+      <link>https://bijenchen.github.io/posts/2022/01/music_connect_midi_keyboard_to_musescore2_in_ubuntu/</link>
+      <pubDate>Sun, 02 Jan 2022 12:06:21 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2022/01/music_connect_midi_keyboard_to_musescore2_in_ubuntu/</guid>
+      <description>Musescore 版本 2.3.2 環境 Ubuntu 20.04.3 LTS How to connect the midi keyboard to musescore2(v2.3.2) in ubuntu(20.04.3)
+以資料傳輸線材連接電腦與 MIDI 裝置 我的 MIDI 裝置是 Casio CT-S300 電子琴，連接方式依照官網教學，電子琴端使用 Micro-B 的接頭，電腦端用 USB 即可。
+注意，使用 USB 線與轉接頭時要選擇 OTG(On The Go) 類型的線，不能使用純充電用的線喔！如果接頭都對但是接上去沒有訊號，可以檢查一下線材類型～
+確認系統能夠讀取 MIDI 裝置的訊號 在 ubuntu 裡可以在任一目錄裡輸入指令 lsusb 檢查是否有成功讀取外接裝置
+連接前 連接後 使用 Musescore2 實時輸入音符 在 MIDI 裝置與電腦已連接的情況下，開啟 Musescore2，進入偏好設定的輸入輸出設定 在「編輯(Edit) &amp;gt; 偏好設定(Preferences) &amp;gt; 輸入/輸出(I/O)」當中。偏好設定的位置可能會因為使用的 Musescore 版本而有差異，請找出自己的輸入輸出設定即可，原則上都是放在偏好設定中。 在輸入輸出設定中，選擇 portAudio 選項，並且找到自己的 MIDI 裝置，儲存後需要重啟 Musescore2 重啟 Musescore2 後，確認開啟了 Musescore2 的 MIDI input 模式後(Toggle &amp;lsquo;MIDI input&amp;rsquo; must be lighted)，在輸入模式中選擇「實時(自動)/ Realtime mode」 此時按下電子琴鍵盤，就可以依照彈奏的音符輸入樂譜囉！</description>
+    </item>
+    
+  </channel>
+</rss>

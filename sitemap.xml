@@ -1,384 +1,274 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/os-and-general-knowledge/</loc>
     <lastmod>2020-11-28T17:13:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/basic-frontend-knowledge/</loc>
     <lastmod>2020-11-28T17:13:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/general/</loc>
     <lastmod>2020-12-26T13:38:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/</loc>
     <lastmod>2020-12-07T09:36:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/</loc>
     <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/</loc>
     <lastmod>2020-11-22T18:05:47+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://bijenchen.github.io/posts/2022/01/</loc>
+    <lastmod>2022-01-03T12:00:50+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2021/05/</loc>
     <lastmod>2021-05-06T18:31:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2021/07/</loc>
     <lastmod>2021-08-11T16:52:42+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2021/08/</loc>
     <lastmod>2021-08-11T16:52:42+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/10/</loc>
     <lastmod>2020-12-21T11:51:31+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/11/</loc>
     <lastmod>2020-12-21T11:51:31+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/12/</loc>
     <lastmod>2020-12-26T13:38:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2021/</loc>
     <lastmod>2021-05-06T18:31:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/music/</loc>
+    <lastmod>2022-01-03T12:00:50+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/musicxml/</loc>
+    <lastmod>2022-01-03T12:00:50+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/posts/2022/01/basic_about_musicxml/</loc>
+    <lastmod>2022-01-03T12:00:50+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/</loc>
+    <lastmod>2022-01-03T12:00:50+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/casiotone/</loc>
+    <lastmod>2022-01-02T15:38:30+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/midi_keyboard/</loc>
+    <lastmod>2022-01-02T15:38:30+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/musescore/</loc>
+    <lastmod>2022-01-02T15:38:30+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/ubuntu/</loc>
+    <lastmod>2022-01-02T15:38:30+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/posts/2022/01/music_connect_midi_keyboard_to_musescore2_in_ubuntu/</loc>
+    <lastmod>2022-01-02T15:38:30+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/work-journal/20210923/</loc>
+    <lastmod>2021-09-23T19:15:27+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/work-journal/</loc>
+    <lastmod>2021-09-23T19:15:27+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/work-journal/</loc>
+    <lastmod>2021-09-23T19:15:27+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/work-journal/20210901/</loc>
+    <lastmod>2021-09-01T18:44:34+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/work-journal/20210817/</loc>
+    <lastmod>2021-08-17T18:20:33+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/work-journal/20210812/</loc>
+    <lastmod>2021-08-17T18:20:33+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/github-page/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/hugo/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/</loc>
-    <lastmod>2021-08-11T16:52:42+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bijenchen.github.io/tags/</loc>
-    <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-12-10T23:07:53+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2021/08/hugo_insert-images/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bijenchen.github.io/</loc>
-    <lastmod>2021-08-11T16:52:42+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/work-journal/20210722/</loc>
     <lastmod>2021-07-22T18:32:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bijenchen.github.io/tags/work-journal/</loc>
-    <lastmod>2021-07-22T18:32:31+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://bijenchen.github.io/work-journal/</loc>
-    <lastmod>2021-07-22T18:32:31+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/work-journal/20210714/</loc>
     <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/work-journal/20210701/</loc>
     <lastmod>2021-07-06T00:14:50+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/work-journal/20210629/</loc>
     <lastmod>2021-06-30T01:02:49+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/work-journal/20210618/</loc>
     <lastmod>2021-06-18T17:29:06+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/work-journal/20210617/</loc>
     <lastmod>2021-06-30T01:02:49+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/general/</loc>
-    <lastmod>2021-05-14T19:55:39+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-12-10T23:07:53+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/roadmap-developer/</loc>
-    <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-12-10T23:07:53+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/general/ssh/</loc>
-    <lastmod>2021-05-14T19:55:39+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-12-10T23:07:53+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/ssh/</loc>
-    <lastmod>2021-05-14T19:55:39+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-12-10T23:07:53+08:00</lastmod>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/database/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/experience/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/index/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/12/database-index/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/sql/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/case/</loc>
     <lastmod>2020-12-21T16:43:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/12/sql-case/</loc>
     <lastmod>2020-12-21T16:43:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/12/compare/</loc>
     <lastmod>2020-12-21T15:16:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/compare/</loc>
     <lastmod>2020-12-21T15:16:52+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/glossary/</loc>
     <lastmod>2020-12-07T09:36:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/saas/</loc>
     <lastmod>2020-12-07T09:36:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/12/xaas/</loc>
     <lastmod>2020-12-07T09:36:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/formula/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/google-sheet/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/11/google-sheet-formula/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/11/select-data/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/command-in-linux/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/su/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/11/su-user/</loc>
     <lastmod>2021-01-10T10:50:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/design/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/11/sleep/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/sleep/</loc>
     <lastmod>2020-12-21T16:42:24+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/hosting/</loc>
     <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/internet/</loc>
     <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/web-host/</loc>
     <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-hosting/</loc>
     <lastmod>2021-07-14T18:52:07+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/dns/</loc>
     <lastmod>2021-05-18T18:20:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/domamin-name-system/</loc>
     <lastmod>2021-05-18T18:20:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-domain-name/</loc>
     <lastmod>2020-11-22T18:14:38+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/dns-and-how-it-works/</loc>
     <lastmod>2021-05-18T18:20:17+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/browser/</loc>
     <lastmod>2020-11-19T08:31:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/browsers-and-how-they-work/</loc>
     <lastmod>2020-11-19T08:31:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/what-is-http/</loc>
     <lastmod>2020-12-07T09:36:16+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/roadmap-developer/backend/internet/how-does-the-internet-work/</loc>
     <lastmod>2020-11-17T09:24:42+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/10/hugo_change-custom-style/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/latavel-5/</loc>
     <lastmod>2020-10-18T23:25:04+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/reflection/</loc>
     <lastmod>2020-10-18T23:25:04+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/10/laravel5-book-kj-01/</loc>
     <lastmod>2020-10-18T23:25:04+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/git/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/git-submodule/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/tags/toml/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/10/hugo_setting-github-page-with-hugo-murmur/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/posts/2020/10/hugo_setting-github-page-with-hugo/</loc>
     <lastmod>2021-08-11T12:22:56+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://bijenchen.github.io/categories/</loc>
+  </url><url>
+    <loc>https://bijenchen.github.io/tags/first/</loc>
+    <lastmod>2021-09-23T19:15:27+08:00</lastmod>
+  </url><url>
+    <loc>https://bijenchen.github.io/</loc>
+    <lastmod>2021-09-23T19:15:27+08:00</lastmod>
   </url>
-  
 </urlset>

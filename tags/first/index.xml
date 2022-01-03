@@ -5,16 +5,15 @@
     <link>https://bijenchen.github.io/tags/first/</link>
     <description>Recent content in first on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 04 Oct 2020 11:36:05 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://bijenchen.github.io/tags/first/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>主頁</title>
-      <link>https://bijenchen.github.io/intro/</link>
-      <pubDate>Sun, 04 Oct 2020 11:36:05 +0800</pubDate>
+      <link>https://bijenchen.github.io/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bijenchen.github.io/intro/</guid>
-      <description>關於這個部落格 * 每篇技術實作的步驟文章都會搭配一篇它的「關於」，「關於」裡面記錄著選擇該主題實作的原因、實作過程中的碰壁狀況以及額外發現的知識，還有也許會出現的心得感想。  關於文章結構 * 技術實作的步驟 + 目標 + 前置作業 + 執行步驟 + 參考資料 * 關於 + 緣起 + 碰壁紀錄 + 節外生枝 + 後記 + 參考資料 * 讀書筆記  關於我  發布日期：2020-10-02 最後更新日期：2020-10-04
- 目標 前置作業 執行步驟 參考資料 緣起 碰壁紀錄 節外生枝 後記 參考資料 </description>
+      <guid>https://bijenchen.github.io/</guid>
+      <description>I&amp;rsquo;m a backend developer with a law degree.
+Keyword of mine  pyLadies Taiwan g0v Backend Developer about 3 years  PHP + Laravel    </description>
     </item>
     
   </channel>

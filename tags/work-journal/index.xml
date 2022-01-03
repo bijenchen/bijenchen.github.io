@@ -6,7 +6,62 @@
     <description>Recent content in Work Journal on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Jul 2021 17:06:54 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/work-journal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 18:36:57 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/work-journal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20210923</title>
+      <link>https://bijenchen.github.io/work-journal/20210923/</link>
+      <pubDate>Thu, 23 Sep 2021 18:36:57 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210923/</guid>
+      <description>事件紀錄 消失的 .bundle 檔 由於目前專案中，nginx 服務是一個 docker container ，所以加了新的 conf.d 檔案後，需要重啟 nginx container 才能吃到新設定。
+但是今天在加上新設定前，失手對正常運作中的 nginx container 執行了 docker-compose down &amp;amp; docker-compose up -d 後，容器居然沒有重啟成功，
+以 docker ps 檢查狀態，發現容器果然持續卡在 restarting ，用 docker logs [container name] 檢查狀況，看到 log 中記錄了
+nginx: [emerg] cannot load certificate &amp;quot;/ssl/xxxx.bundle&amp;quot;: BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen(&#39;/ssl/xxxx.bundle&#39;,&#39;r&#39;) error:2006D080:BIO routines:BIO_new_file:no such file) 因為沒有深入碰過 ssl 憑證，所以我只能先確認到底是誰在使用 xxxx.bundle 這個檔案，
+查了一下發現是前後端容器的 nginx 跳轉設定 (nginx &amp;gt; conf.d &amp;gt; .conf) 裡面，指定 ssl 憑證檔時使用。</description>
+    </item>
+    
+    <item>
+      <title>20210901</title>
+      <link>https://bijenchen.github.io/work-journal/20210901/</link>
+      <pubDate>Wed, 01 Sep 2021 10:52:40 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210901/</guid>
+      <description>事件紀錄 關於程式優化 在程式執行中，盡可能少產生一些龐大但使用次數少的物件，避免無謂佔用記憶體。
+像是 cache 沒有控管地胡亂儲存累積，就可能會讓記憶體被塞滿，卡住其他行為。
+或者是產生只用一次的大陣列，如果可以隨著產生的過程把後續需要的行為直接處理掉，就不必長出使用頻率很低的陣列出來佔空間。
+關於 laravel 架構  app/Console/Kernel.php 是放置 php artisan commands 以及排程設定的地方   在這邊設定排程後，在 laravel 專案用 php artisan schedule:list 可以檢查開啟的排程下一個執行時間是什麼時候，當執行時間與系統排程檢查對上時，就會執行 laravel 裡面設定的排程。
+ 系統的排程執行設定必須寫成這樣：  * * * * * php /path/to/artisan schedule:run &amp;gt;&amp;gt; /dev/null 2&amp;gt;&amp;amp;1 讓系統排程每分鐘都去執行 laravel 的 schedule:run ，看看有沒有預定執行時間已經到的 laravel 排程需要跑。 參考資源: 任務排程      如果專案環境是用 docker 起最精簡的 container 設定排程後，在 container 要記得安裝 crontab ，不然不會有系統排程的功能
+   ide-helper 檔案是 ide-helper 套件自動產生的，作用是 mapping namespace 和 class ，以便在 auto load 時找到正確的 class，開發時也能夠藉由 reference 功能跳轉到對應程式檔案。  關於 ide-helper : barryvdh/laravel-ide-helper   由於 auto load 會去讀取 class 的 construct() ，所以 construct() 裡面不要放「起新物件」、「資料庫連線」之類跟環境設定和 .</description>
+    </item>
+    
+    <item>
+      <title>20210817</title>
+      <link>https://bijenchen.github.io/work-journal/20210817/</link>
+      <pubDate>Tue, 17 Aug 2021 17:48:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210817/</guid>
+      <description>事件紀錄 久違的重溫了資料庫的 view 概念，順手紀錄一下。
+碰到別的部門需要取用我們負責維護的資料表時，可以由我們準備好 SQL ，自己撈出一個虛擬表，將對方需要的欄位資料回傳給他。此時對方直接 select * from view 就好了。 不過更恰當的做法應該是在不同系統之間都用 API 溝通，我提供 API 讓對方呼叫，藉此取得所需的資料。畢竟如果這個系統可能會對外使用的話，沒道理要外人來連我的 database 取資料。
+postgresql 有多一個功能 可以快取 view 變成真的虛擬表 詳見
+總結 1. 工作技能有沒有因此成長了？ 已知概念，順手筆記
+2. 計畫如何改善現況或者可以試著做得更好？ X
+3. 如何在這件事上提升效率？ X
+4. 有沒有把時間花在刀口上？ 有！
+關鍵字  view  </description>
+    </item>
+    
+    <item>
+      <title>20210812</title>
+      <link>https://bijenchen.github.io/work-journal/20210812/</link>
+      <pubDate>Thu, 12 Aug 2021 17:48:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210812/</guid>
+      <description>事件紀錄 因為公司正在批次維修設備，所以換了一台工作筆電。
+原本打算使用 mac 內建的系統移轉輔助程式就好，殊不知放了一晚還沒傳完，一怒之下把該裝的東西直接重裝，順便回憶一下一些基本設定。
+項目
+ /etc/hosts  開發人員的測試環境是在公司的公用伺服器上，必須可以用瀏覽器檢視測試機內容，所以要設定。   ssh  檢查測試環境和調整設定會用到，總要先連線到遠端主機才能開始做事吧～ gen ssh key 的時候雖然用密碼對 key 加密比較安全，可是無論是 source tree 或是 sftp 都還要另外處理輸入加密密碼的狀況，而且設定 ssh 就是為了不想打密碼，結果還是得輸入加密用的密碼，根本多餘！  設定不好的話 source tree 會反覆跟你要加密密碼，在開 submodule 時也會 permission denied (sftp 也會遇到一樣問題)，奉勸真的不要找事。     VPN  居家辦公時需要用到，測試機只能用公司內網連線   vscode 有 sync 使用者設定的功能，所以只要重新裝再登入後同步就好  sftp 記得舊的電腦上的設定要拔掉，不然不小心存到檔案就會兩台電腦蓋來蓋去   source tree 帳號設定用 HTTP 就行了，可是還是要把 ssh key 存到帳號設定裡，才不用老是在輸入密碼  git clone 時直接在目的資料夾用 ssh 的方式取得專案最方便，記得把 ssh 需要的 host &amp;amp; user 存入 .</description>
+    </item>
+    
     <item>
       <title>20210722</title>
       <link>https://bijenchen.github.io/work-journal/20210722/</link>

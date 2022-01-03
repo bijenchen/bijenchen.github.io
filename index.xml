@@ -1,12 +1,91 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>文科人的資訊筆記</title>
+    <title>主頁 on 文科人的資訊筆記</title>
     <link>https://bijenchen.github.io/</link>
-    <description>Recent content on 文科人的資訊筆記</description>
+    <description>Recent content in 主頁 on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 11 Aug 2021 11:44:56 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://bijenchen.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Musicxml 格式初步理解</title>
+      <link>https://bijenchen.github.io/posts/2022/01/basic_about_musicxml/</link>
+      <pubDate>Mon, 03 Jan 2022 11:24:00 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2022/01/basic_about_musicxml/</guid>
+      <description>摘要：
+ musicxml 是一種 xml 格式的延伸，主要作用是以人眼可讀、同時網頁可辨識的約定格式來標示譜面資訊 雖然如上宣稱，但因為實際的譜面資訊多，約定格式組合之後不易讀，所以還是需要依靠軟體轉換為五線譜或其他常用譜面 好處是能夠用文字文本的形式儲存音樂，相較於 MIDI 格式，能保留較齊全的演奏指示  疑問：
+ 似乎要跟 Lilypond 所採用 ABC記譜法(ABC notion) 取得平衡點，盡可能用簡潔文字紀錄可以跨平台呈現的譜面？  我的需求：
+ 用文本儲存音樂資訊，可任意轉換為五線譜與簡譜  用文本儲存音樂資訊，可任意轉換為五線譜  musicxml + musescore 已可達成雙向轉換的功能   用文本儲存音樂資訊，可任意轉換為簡譜  TODO      參考資料  Wiki:ABC記譜法 Wiki:MusicXML 一個中音 C 在 MusicXML 要這樣記才行(C大調，G譜號，4/4拍，包含一個中央C全音符)  &amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot; standalone=&amp;quot;no&amp;quot;?&amp;gt; &amp;lt;!DOCTYPE score-partwise PUBLIC &amp;quot;-//Recordare//DTD MusicXML 3.1 Partwise//EN&amp;quot; &amp;quot;http://www.musicxml.org/dtds/partwise.dtd&amp;quot;&amp;gt; &amp;lt;score-partwise version=&amp;quot;3.1&amp;quot;&amp;gt; &amp;lt;part-list&amp;gt; &amp;lt;score-part id=&amp;quot;P1&amp;quot;&amp;gt; &amp;lt;part-name&amp;gt;Music&amp;lt;/part-name&amp;gt; &amp;lt;/score-part&amp;gt; &amp;lt;/part-list&amp;gt; &amp;lt;part id=&amp;quot;P1&amp;quot;&amp;gt; &amp;lt;measure number=&amp;quot;1&amp;quot;&amp;gt; &amp;lt;attributes&amp;gt; &amp;lt;divisions&amp;gt;1&amp;lt;/divisions&amp;gt; &amp;lt;key&amp;gt; &amp;lt;fifths&amp;gt;0&amp;lt;/fifths&amp;gt; &amp;lt;/key&amp;gt; &amp;lt;time&amp;gt; &amp;lt;beats&amp;gt;4&amp;lt;/beats&amp;gt; &amp;lt;beat-type&amp;gt;4&amp;lt;/beat-type&amp;gt; &amp;lt;/time&amp;gt; &amp;lt;clef&amp;gt; &amp;lt;sign&amp;gt;G&amp;lt;/sign&amp;gt; &amp;lt;line&amp;gt;2&amp;lt;/line&amp;gt; &amp;lt;/clef&amp;gt; &amp;lt;/attributes&amp;gt; &amp;lt;note&amp;gt; &amp;lt;pitch&amp;gt; &amp;lt;step&amp;gt;C&amp;lt;/step&amp;gt; &amp;lt;octave&amp;gt;4&amp;lt;/octave&amp;gt; &amp;lt;/pitch&amp;gt; &amp;lt;duration&amp;gt;4&amp;lt;/duration&amp;gt; &amp;lt;type&amp;gt;whole&amp;lt;/type&amp;gt; &amp;lt;/note&amp;gt; &amp;lt;/measure&amp;gt; &amp;lt;/part&amp;gt; &amp;lt;/score-partwise&amp;gt;  Magenta魔改记-2：数据格式与数据集  解說 MusicXML 格式   了解MusicXML  詳細說明了 MusicXML 的背景觀念   宅學習: MusicXML w3c 的musicxml文件  </description>
+    </item>
+    
+    <item>
+      <title>如何將 MIDI 鍵盤連接至 Musescore2 軟體</title>
+      <link>https://bijenchen.github.io/posts/2022/01/music_connect_midi_keyboard_to_musescore2_in_ubuntu/</link>
+      <pubDate>Sun, 02 Jan 2022 12:06:21 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/posts/2022/01/music_connect_midi_keyboard_to_musescore2_in_ubuntu/</guid>
+      <description>Musescore 版本 2.3.2 環境 Ubuntu 20.04.3 LTS How to connect the midi keyboard to musescore2(v2.3.2) in ubuntu(20.04.3)
+以資料傳輸線材連接電腦與 MIDI 裝置 我的 MIDI 裝置是 Casio CT-S300 電子琴，連接方式依照官網教學，電子琴端使用 Micro-B 的接頭，電腦端用 USB 即可。
+注意，使用 USB 線與轉接頭時要選擇 OTG(On The Go) 類型的線，不能使用純充電用的線喔！如果接頭都對但是接上去沒有訊號，可以檢查一下線材類型～
+確認系統能夠讀取 MIDI 裝置的訊號 在 ubuntu 裡可以在任一目錄裡輸入指令 lsusb 檢查是否有成功讀取外接裝置
+連接前 連接後 使用 Musescore2 實時輸入音符 在 MIDI 裝置與電腦已連接的情況下，開啟 Musescore2，進入偏好設定的輸入輸出設定 在「編輯(Edit) &amp;gt; 偏好設定(Preferences) &amp;gt; 輸入/輸出(I/O)」當中。偏好設定的位置可能會因為使用的 Musescore 版本而有差異，請找出自己的輸入輸出設定即可，原則上都是放在偏好設定中。 在輸入輸出設定中，選擇 portAudio 選項，並且找到自己的 MIDI 裝置，儲存後需要重啟 Musescore2 重啟 Musescore2 後，確認開啟了 Musescore2 的 MIDI input 模式後(Toggle &amp;lsquo;MIDI input&amp;rsquo; must be lighted)，在輸入模式中選擇「實時(自動)/ Realtime mode」 此時按下電子琴鍵盤，就可以依照彈奏的音符輸入樂譜囉！</description>
+    </item>
+    
+    <item>
+      <title>20210923</title>
+      <link>https://bijenchen.github.io/work-journal/20210923/</link>
+      <pubDate>Thu, 23 Sep 2021 18:36:57 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210923/</guid>
+      <description>事件紀錄 消失的 .bundle 檔 由於目前專案中，nginx 服務是一個 docker container ，所以加了新的 conf.d 檔案後，需要重啟 nginx container 才能吃到新設定。
+但是今天在加上新設定前，失手對正常運作中的 nginx container 執行了 docker-compose down &amp;amp; docker-compose up -d 後，容器居然沒有重啟成功，
+以 docker ps 檢查狀態，發現容器果然持續卡在 restarting ，用 docker logs [container name] 檢查狀況，看到 log 中記錄了
+nginx: [emerg] cannot load certificate &amp;quot;/ssl/xxxx.bundle&amp;quot;: BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen(&#39;/ssl/xxxx.bundle&#39;,&#39;r&#39;) error:2006D080:BIO routines:BIO_new_file:no such file) 因為沒有深入碰過 ssl 憑證，所以我只能先確認到底是誰在使用 xxxx.bundle 這個檔案，
+查了一下發現是前後端容器的 nginx 跳轉設定 (nginx &amp;gt; conf.d &amp;gt; .conf) 裡面，指定 ssl 憑證檔時使用。</description>
+    </item>
+    
+    <item>
+      <title>20210901</title>
+      <link>https://bijenchen.github.io/work-journal/20210901/</link>
+      <pubDate>Wed, 01 Sep 2021 10:52:40 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210901/</guid>
+      <description>事件紀錄 關於程式優化 在程式執行中，盡可能少產生一些龐大但使用次數少的物件，避免無謂佔用記憶體。
+像是 cache 沒有控管地胡亂儲存累積，就可能會讓記憶體被塞滿，卡住其他行為。
+或者是產生只用一次的大陣列，如果可以隨著產生的過程把後續需要的行為直接處理掉，就不必長出使用頻率很低的陣列出來佔空間。
+關於 laravel 架構  app/Console/Kernel.php 是放置 php artisan commands 以及排程設定的地方   在這邊設定排程後，在 laravel 專案用 php artisan schedule:list 可以檢查開啟的排程下一個執行時間是什麼時候，當執行時間與系統排程檢查對上時，就會執行 laravel 裡面設定的排程。
+ 系統的排程執行設定必須寫成這樣：  * * * * * php /path/to/artisan schedule:run &amp;gt;&amp;gt; /dev/null 2&amp;gt;&amp;amp;1 讓系統排程每分鐘都去執行 laravel 的 schedule:run ，看看有沒有預定執行時間已經到的 laravel 排程需要跑。 參考資源: 任務排程      如果專案環境是用 docker 起最精簡的 container 設定排程後，在 container 要記得安裝 crontab ，不然不會有系統排程的功能
+   ide-helper 檔案是 ide-helper 套件自動產生的，作用是 mapping namespace 和 class ，以便在 auto load 時找到正確的 class，開發時也能夠藉由 reference 功能跳轉到對應程式檔案。  關於 ide-helper : barryvdh/laravel-ide-helper   由於 auto load 會去讀取 class 的 construct() ，所以 construct() 裡面不要放「起新物件」、「資料庫連線」之類跟環境設定和 .</description>
+    </item>
+    
+    <item>
+      <title>20210817</title>
+      <link>https://bijenchen.github.io/work-journal/20210817/</link>
+      <pubDate>Tue, 17 Aug 2021 17:48:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210817/</guid>
+      <description>事件紀錄 久違的重溫了資料庫的 view 概念，順手紀錄一下。
+碰到別的部門需要取用我們負責維護的資料表時，可以由我們準備好 SQL ，自己撈出一個虛擬表，將對方需要的欄位資料回傳給他。此時對方直接 select * from view 就好了。 不過更恰當的做法應該是在不同系統之間都用 API 溝通，我提供 API 讓對方呼叫，藉此取得所需的資料。畢竟如果這個系統可能會對外使用的話，沒道理要外人來連我的 database 取資料。
+postgresql 有多一個功能 可以快取 view 變成真的虛擬表 詳見
+總結 1. 工作技能有沒有因此成長了？ 已知概念，順手筆記
+2. 計畫如何改善現況或者可以試著做得更好？ X
+3. 如何在這件事上提升效率？ X
+4. 有沒有把時間花在刀口上？ 有！
+關鍵字  view  </description>
+    </item>
+    
+    <item>
+      <title>20210812</title>
+      <link>https://bijenchen.github.io/work-journal/20210812/</link>
+      <pubDate>Thu, 12 Aug 2021 17:48:14 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/work-journal/20210812/</guid>
+      <description>事件紀錄 因為公司正在批次維修設備，所以換了一台工作筆電。
+原本打算使用 mac 內建的系統移轉輔助程式就好，殊不知放了一晚還沒傳完，一怒之下把該裝的東西直接重裝，順便回憶一下一些基本設定。
+項目
+ /etc/hosts  開發人員的測試環境是在公司的公用伺服器上，必須可以用瀏覽器檢視測試機內容，所以要設定。   ssh  檢查測試環境和調整設定會用到，總要先連線到遠端主機才能開始做事吧～ gen ssh key 的時候雖然用密碼對 key 加密比較安全，可是無論是 source tree 或是 sftp 都還要另外處理輸入加密密碼的狀況，而且設定 ssh 就是為了不想打密碼，結果還是得輸入加密用的密碼，根本多餘！  設定不好的話 source tree 會反覆跟你要加密密碼，在開 submodule 時也會 permission denied (sftp 也會遇到一樣問題)，奉勸真的不要找事。     VPN  居家辦公時需要用到，測試機只能用公司內網連線   vscode 有 sync 使用者設定的功能，所以只要重新裝再登入後同步就好  sftp 記得舊的電腦上的設定要拔掉，不然不小心存到檔案就會兩台電腦蓋來蓋去   source tree 帳號設定用 HTTP 就行了，可是還是要把 ssh key 存到帳號設定裡，才不用老是在輸入密碼  git clone 時直接在目的資料夾用 ssh 的方式取得專案最方便，記得把 ssh 需要的 host &amp;amp; user 存入 .</description>
+    </item>
+    
     <item>
       <title>在 Hugo 文章裡顯示圖片</title>
       <link>https://bijenchen.github.io/posts/2021/08/hugo_insert-images/</link>

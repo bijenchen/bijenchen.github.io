@@ -6,7 +6,70 @@
     <description>Recent content in Tags on 文科人的資訊筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Aug 2021 11:44:56 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Jan 2022 11:24:00 +0800</lastBuildDate><atom:link href="https://bijenchen.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>music</title>
+      <link>https://bijenchen.github.io/tags/music/</link>
+      <pubDate>Mon, 03 Jan 2022 11:24:00 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>musicxml</title>
+      <link>https://bijenchen.github.io/tags/musicxml/</link>
+      <pubDate>Mon, 03 Jan 2022 11:24:00 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/musicxml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>casiotone</title>
+      <link>https://bijenchen.github.io/tags/casiotone/</link>
+      <pubDate>Sun, 02 Jan 2022 12:06:21 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/casiotone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>midi_keyboard</title>
+      <link>https://bijenchen.github.io/tags/midi_keyboard/</link>
+      <pubDate>Sun, 02 Jan 2022 12:06:21 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/midi_keyboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>musescore</title>
+      <link>https://bijenchen.github.io/tags/musescore/</link>
+      <pubDate>Sun, 02 Jan 2022 12:06:21 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/musescore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>https://bijenchen.github.io/tags/ubuntu/</link>
+      <pubDate>Sun, 02 Jan 2022 12:06:21 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Work Journal</title>
+      <link>https://bijenchen.github.io/tags/work-journal/</link>
+      <pubDate>Thu, 23 Sep 2021 18:36:57 +0800</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/work-journal/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>github page</title>
       <link>https://bijenchen.github.io/tags/github-page/</link>
@@ -22,15 +85,6 @@
       <pubDate>Wed, 11 Aug 2021 11:44:56 +0800</pubDate>
       
       <guid>https://bijenchen.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Work Journal</title>
-      <link>https://bijenchen.github.io/tags/work-journal/</link>
-      <pubDate>Thu, 22 Jul 2021 17:06:54 +0800</pubDate>
-      
-      <guid>https://bijenchen.github.io/tags/work-journal/</guid>
       <description></description>
     </item>
     
@@ -283,6 +337,15 @@
       <pubDate>Fri, 02 Oct 2020 18:05:44 +0800</pubDate>
       
       <guid>https://bijenchen.github.io/tags/toml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>first</title>
+      <link>https://bijenchen.github.io/tags/first/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://bijenchen.github.io/tags/first/</guid>
       <description></description>
     </item>
     
